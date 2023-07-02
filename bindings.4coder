@@ -1,7 +1,7 @@
 
 keys_global =
 {
-    // NOTE(rjf): Meta
+    //NOTE(rjf): Meta
     { "exit_4coder" ,                             "F4",      "Alt"                     },
     { "keyboard_macro_start_recording" ,          "U",      "Control"                  },
     { "keyboard_macro_finish_recording",          "U",      "Control", "Shift"         },
@@ -122,7 +122,6 @@ keys_file =
     { "list_all_locations_of_identifier", "T", "Control", "Shift" },
     
     // NOTE(rjf): Replace
-    { "replace_in_range",            "A", "Control" },
     { "query_replace",               "Q", "Control" },
     { "query_replace_identifier",    "Q", "Control", "Shift" },
     { "query_replace_selection",     "Q", "Alt" },
@@ -177,6 +176,10 @@ keys_file =
     // NOTE(rjf): Helpers
     { "f4_write_zero_struct",  "0", "Control" },
     { "f4_toggle_enclosure_side",  "Semicolon", "Alt" },
+    
+    // NOTE(maihd): MaiHD custom
+    { "select_all",            "A", "Control" },
+    { "comment_line_toggle",   "ForwardSlash", "Control" },
 };
 
 keys_code =
