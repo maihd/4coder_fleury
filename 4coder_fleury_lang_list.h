@@ -10,6 +10,9 @@
 #include "4coder_fleury_lang_jai.cpp"
 #include "4coder_fleury_lang_metadesk.cpp"
 
+#include "4coder_maihd_lang_cs.cpp"
+//#include "4coder_maihd_lang_lua.cpp"
+
 // NOTE(rjf): @f4_register_languages Register languages.
 function void
 F4_RegisterLanguages(void)
@@ -62,6 +65,17 @@ F4_RegisterLanguages(void)
                                 F4_MD_Highlight,
                                 Lex_State_Cpp);
         }
+    }
+    
+    // @note(maihd): C#
+    {
+        F4_RegisterLanguage(S8Lit("cs"),
+                            F4_CPP_IndexFile,
+                            lex_full_input_cpp_init,
+                            lex_full_input_cpp_breaks,
+                            F4_CPP_PosContext,
+                            F4_CPP_Highlight,
+                            Lex_State_Cpp);
     }
 }
 
