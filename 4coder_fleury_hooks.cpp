@@ -517,7 +517,7 @@ F4_Render(Application_Links *app, Frame_Info frame_info, View_ID view_id)
     {
         Rect_f32_Pair pair = layout_line_number_margin(app, buffer, region, digit_advance);
         line_number_rect = pair.min;
-        line_number_rect.x1 += 4;
+        // line_number_rect.x1 += 0;
         region = pair.max;
     }
 
