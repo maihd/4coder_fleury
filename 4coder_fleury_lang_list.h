@@ -10,6 +10,11 @@
 #include "4coder_fleury_lang_jai.cpp"
 #include "4coder_fleury_lang_metadesk.cpp"
 
+// @note(maihd): Include mai language files here.
+#include "generated/4coder_maihd_lexer_cs.h"
+#include "generated/4coder_maihd_lexer_cs.cpp"
+//#include "generated/4coder_maihd_lexer_lua.h"
+//#include "generated/4coder_maihd_lexer_lua.cpp"
 #include "4coder_maihd_lang_cs.cpp"
 //#include "4coder_maihd_lang_lua.cpp"
 
@@ -70,12 +75,23 @@ F4_RegisterLanguages(void)
     // @note(maihd): C#
     {
         F4_RegisterLanguage(S8Lit("cs"),
-                            F4_CPP_IndexFile,
-                            lex_full_input_cpp_init,
-                            lex_full_input_cpp_breaks,
-                            F4_CPP_PosContext,
-                            F4_CPP_Highlight,
-                            Lex_State_Cpp);
+                            F4_CS_IndexFile,
+                            lex_full_input_cs_init,
+                            lex_full_input_cs_breaks,
+                            F4_CS_PosContext,
+                            F4_CS_Highlight,
+                            Lex_State_CS);
+    }
+    
+    // @note(maihd): Lua
+    {
+        //F4_RegisterLanguage(S8Lit("lua"),
+        //F4_Lua_IndexFile,
+        //lex_full_input_cpp_init,
+        //lex_full_input_cpp_breaks,
+        //F4_Lua_PosContext,
+        //F4_Lua_Highlight,
+        //Lex_State_Lua);
     }
 }
 

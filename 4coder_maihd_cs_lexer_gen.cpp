@@ -5,7 +5,7 @@
 // TOP
 
 #define LANG_NAME_LOWER cs
-#define LANG_NAME_CAMEL C# 
+#define LANG_NAME_CAMEL CS 
 
 #include "lexer_generator/4coder_lex_gen_main.cpp"
 
@@ -61,27 +61,13 @@ build_language_model(void)
     
     sm_select_base_kind(TokenBaseKind_LiteralString);
     sm_direct_token_kind("LiteralString");
-    sm_direct_token_kind("LiteralStringWide");
-    sm_direct_token_kind("LiteralStringUTF8");
-    sm_direct_token_kind("LiteralStringUTF16");
-    sm_direct_token_kind("LiteralStringUTF32");
-    sm_direct_token_kind("LiteralStringRaw");
-    sm_direct_token_kind("LiteralStringWideRaw");
-    sm_direct_token_kind("LiteralStringUTF8Raw");
-    sm_direct_token_kind("LiteralStringUTF16Raw");
-    sm_direct_token_kind("LiteralStringUTF32Raw");
     sm_direct_token_kind("LiteralCharacter");
-    sm_direct_token_kind("LiteralCharacterWide");
-    sm_direct_token_kind("LiteralCharacterUTF8");
-    sm_direct_token_kind("LiteralCharacterUTF16");
-    sm_direct_token_kind("LiteralCharacterUTF32");
-    sm_direct_token_kind("PPIncludeFile");
     sm_direct_token_kind("PPErrorMessage");
     
     sm_select_base_kind(TokenBaseKind_Keyword);
     sm_direct_token_kind("KeywordGeneric");
     
-    // Jai Operators
+    // C# Operators
     Operator_Set *main_ops = sm_begin_op_set();
     
     sm_select_base_kind(TokenBaseKind_ScopeOpen);
@@ -97,10 +83,11 @@ build_language_model(void)
     sm_select_base_kind(TokenBaseKind_StatementClose);
     sm_op(";");
     sm_select_base_kind(TokenBaseKind_Operator);
-    sm_op("...");
+    //sm_op("...");
     sm_op(":");
-    sm_op("::");
-    sm_op(":=");
+    //sm_op("::");
+    //sm_op(":=");
+    sm_op("=");
     sm_op(".");
     sm_op("+");
     sm_op("-");
@@ -108,12 +95,12 @@ build_language_model(void)
     sm_op("~");
     sm_op("*");
     sm_op("&");
-    sm_op(".*");
+    //sm_op(".*");
     sm_op("/");
     sm_op("%");
-    sm_op("->");
-    sm_op("=>");
-    sm_op("..");
+    //sm_op("->");
+    //sm_op("=>");
+    //sm_op("..");
     
     sm_char_name('<', "Left");
     sm_char_name('>', "Right");
@@ -149,45 +136,36 @@ build_language_model(void)
     sm_select_base_kind(TokenBaseKind_StatementClose);
     sm_op(",");
     
-    // Jai Keywords
+    // C# Keywords
     Keyword_Set *main_keys = sm_begin_key_set("main_keys");
     
     sm_select_base_kind(TokenBaseKind_Keyword);
-    sm_key("AlignOf");
     sm_key("Operator");
-    sm_key("Null");
-    sm_key("Inline");
     sm_key("Using");
-    sm_key("Any", "Any");
+    sm_key("Namespace");
     sm_key("Void");
     sm_key("String");
     sm_key("Bool");
     sm_key("Float");
-    sm_key("Float32");
-    sm_key("Float64");
+    sm_key("Double");
+    sm_key("Decimal");
     sm_key("Int");
-    sm_key("U8");
-    sm_key("U16");
-    sm_key("U32");
-    sm_key("U64");
-    sm_key("S8");
-    sm_key("S16");
-    sm_key("S32");
-    sm_key("S64");
+    sm_key("Long");
+    sm_key("Byte");
+    sm_key("Short");
+    sm_key("Uint");
+    sm_key("Ulong");
+    sm_key("Ushort");
+    sm_key("Char");
+    sm_key("Sbyte");
     sm_key("Struct");
-    sm_key("Union");
+    sm_key("Class");
     sm_key("Enum");
-    sm_key("SizeOf", "size_of");
+    sm_key("SizeOf", "sizeof");
+    sm_key("TypeOf", "typeof");
+    sm_key("NameOf", "nameof");
     sm_key("New");
     sm_key("Delete");
-    sm_key("Defer");
-    sm_key("Autocast", "xx");
-    sm_key("Remove");
-    sm_key("PushContext", "push_context");
-    sm_key("Uninitialized", "---");
-    sm_key("It", "it");
-    sm_key("ItIndex", "it_index");
-    sm_key("Context", "context");
     sm_key("Break");
     sm_key("Case");
     sm_key("Continue");
@@ -195,46 +173,51 @@ build_language_model(void)
     sm_key("Do");
     sm_key("Else");
     sm_key("For");
+    sm_key("Foreach");
     sm_key("Goto");
     sm_key("If");
     sm_key("Return");
     sm_key("Switch");
     sm_key("While");
-    sm_key("Cast");
+    sm_key("In");
+    sm_key("Out");
+    sm_key("Ref");
+    sm_key("Public");
+    sm_key("Private");
+    sm_key("Protected");
+    sm_key("Internal");
+    sm_key("Var");
+    sm_key("Const");
+    sm_key("Static");
+    sm_key("Readonly");
     
     sm_select_base_kind(TokenBaseKind_LiteralInteger);
+    sm_key("LiteralNull", "null");
     sm_key("LiteralTrue", "true");
     sm_key("LiteralFalse", "false");
     
     sm_select_base_kind(TokenBaseKind_Identifier);
     sm_key_fallback("Identifier");
     
-    // Jai Preprocess Directives
+    // C# Preprocess Directives
     Keyword_Set *pp_directive_set = sm_begin_key_set("pp_directives");
     
     sm_select_base_kind(TokenBaseKind_Identifier);
-    sm_key("PPInclude", "include");
-    sm_key("PPVersion", "version");
     sm_key("PPDefine", "define");
     sm_key("PPUndef", "undef");
-    sm_key("PPIfDef", "ifdef");
-    sm_key("PPIfNDef", "ifndef");
     sm_key("PPElse", "else");
     sm_key("PPElIf", "elif");
     sm_key("PPEndIf", "endif");
     sm_key("PPError", "error");
-    sm_key("PPUsing", "using");
+    //sm_key("PPWarn", "warn");
     sm_key("PPLine", "line");
     sm_key("PPIf", "if");
-    sm_key("PPImport", "import");
-    sm_key("PPPragma", "pragma");
-    sm_key("PPPragma", "run");
-    sm_key("PPLoad", "load");
+    //sm_key("PPPragma", "pragma");
     
     sm_select_base_kind(TokenBaseKind_LexError);
     sm_key_fallback("PPUnknown");
     
-    // Jai Preprocess Keywords
+    // C# Preprocess Keywords
     Keyword_Set *pp_keys = sm_begin_key_set("pp_keys");
     
     sm_select_base_kind(TokenBaseKind_Keyword);
@@ -243,16 +226,12 @@ build_language_model(void)
     // State Machine
     State *root = sm_begin_state_machine();
     
-    Flag *is_hex = sm_add_flag(FlagResetRule_AutoZero);
-    Flag *is_oct = sm_add_flag(FlagResetRule_AutoZero);
-    Flag *is_wide  = sm_add_flag(FlagResetRule_AutoZero);
-    Flag *is_utf8  = sm_add_flag(FlagResetRule_AutoZero);
-    Flag *is_utf16 = sm_add_flag(FlagResetRule_AutoZero);
-    Flag *is_utf32 = sm_add_flag(FlagResetRule_AutoZero);
-    Flag *is_char  = sm_add_flag(FlagResetRule_AutoZero);
+    Flag *is_hex    = sm_add_flag(FlagResetRule_AutoZero);
+    Flag *is_oct    = sm_add_flag(FlagResetRule_AutoZero);
+    Flag *is_char   = sm_add_flag(FlagResetRule_AutoZero);
+    //Flag *is_string = sm_add_flag(FlagResetRule_AutoZero);
     
     Flag *is_pp_body      = sm_add_flag(FlagResetRule_AutoZero);
-    Flag *is_include_body = sm_add_flag(FlagResetRule_KeepState);
     Flag *is_error_body   = sm_add_flag(FlagResetRule_KeepState);
     
     sm_flag_bind(is_pp_body, TokenBaseFlag_PreprocessorBody);
@@ -295,14 +274,11 @@ build_language_model(void)
     AddState(pp_directive);
     AddState(pp_directive_emit);
     
-    AddState(include_pointy);
-    AddState(include_quotes);
-    
-    AddState(pre_L);
-    AddState(pre_u);
-    AddState(pre_U);
-    AddState(pre_u8);
-    AddState(pre_R);
+    //AddState(pre_L);
+    //AddState(pre_u);
+    //AddState(pre_U);
+    //AddState(pre_u8);
+    //AddState(pre_R);
     
     AddState(character);
     AddState(string);
@@ -355,10 +331,10 @@ build_language_model(void)
             "_$",
             identifier);
     sm_case(utf8, identifier);
-    sm_case("L", pre_L);
-    sm_case("u", pre_u);
-    sm_case("U", pre_U);
-    sm_case("R", pre_R);
+    //sm_case("L", pre_L);
+    //sm_case("u", pre_u);
+    //sm_case("U", pre_U);
+    //sm_case("R", pre_R);
     
     sm_case_flagged(is_error_body, true, " \r\t\f\v", error_body);
     sm_case_flagged(is_error_body, false, " \r\t\f\v", whitespace);
@@ -374,16 +350,12 @@ build_language_model(void)
         char *char_set_array = smo_char_set_get_array(char_set);
         State *operator_state = smo_op_set_lexer_root(main_ops_without_dot_or_slash, root, "LexError");
         sm_case_peek(char_set_array, operator_state);
-        sm_case_peek_flagged(is_include_body, false, "<", operator_state);
+        sm_case_peek_flagged(is_error_body, false, "<", operator_state);
     }
-    
-    sm_case_flagged(is_include_body, true, "<", include_pointy);
-    sm_case_flagged(is_include_body, true, "\"", include_quotes);
     
     sm_case("123456789", number);
     sm_case("0", znumber);
     
-    sm_case_flagged(is_include_body, false, "\"", string);
     sm_case("\'", character);
     sm_case_flagged(is_pp_body, false, "#", pp_directive_whitespace);
     
@@ -424,7 +396,6 @@ build_language_model(void)
     
     sm_select_state(whitespace_end_pp);
     sm_set_flag(is_pp_body, false);
-    sm_set_flag(is_include_body, false);
     sm_set_flag(is_error_body, false);
     sm_fallback_peek(whitespace);
     
@@ -789,7 +760,6 @@ build_language_model(void)
     sm_delim_mark_one_past_last();
     {
         Emit_Rule *emit = sm_emit_rule();
-        sm_emit_check_set_flag("PPInclude", is_include_body, true);
         sm_emit_check_set_flag("PPError", is_error_body, true);
         sm_emit_handler_keys_delim(pp_directive_set);
         sm_fallback_peek(emit);
@@ -797,78 +767,40 @@ build_language_model(void)
     
     ////
     
-    sm_select_state(include_pointy);
-    sm_case("abcdefghijklmnopqrstuvwxyz"
-            "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-            "_. /\\"
-            "0123456789",
-            include_pointy);
-    {
-        Emit_Rule *emit = sm_emit_rule();
-        sm_emit_handler_direct("PPIncludeFile");
-        sm_case(">", emit);
-    }
-    {
-        Emit_Rule *emit = sm_emit_rule();
-        sm_emit_handler_direct("LexError");
-        sm_fallback_peek(emit);
-    }
+    //sm_select_state(pre_L);
+    //sm_set_flag(is_wide, true);
+    //sm_case("\"", string);
+    //sm_case("R", pre_R);
+    //sm_fallback_peek(identifier);
     
     ////
     
-    sm_select_state(include_quotes);
-    sm_case("abcdefghijklmnopqrstuvwxyz"
-            "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-            "_. /\\"
-            "0123456789",
-            include_quotes);
-    {
-        Emit_Rule *emit = sm_emit_rule();
-        sm_emit_handler_direct("PPIncludeFile");
-        sm_case("\"", emit);
-    }
-    {
-        Emit_Rule *emit = sm_emit_rule();
-        sm_emit_handler_direct("LexError");
-        sm_fallback_peek(emit);
-    }
+    //sm_select_state(pre_u);
+    //sm_set_flag(is_utf16, true);
+    //sm_case("\"", string);
+    //sm_case("8", pre_u8);
+    //sm_case("R", pre_R);
+    //sm_fallback_peek(identifier);
     
     ////
     
-    sm_select_state(pre_L);
-    sm_set_flag(is_wide, true);
-    sm_case("\"", string);
-    sm_case("R", pre_R);
-    sm_fallback_peek(identifier);
+    //sm_select_state(pre_U);
+    //sm_set_flag(is_utf32, true);
+    //sm_case("\"", string);
+    //sm_case("R", pre_R);
+    //sm_fallback_peek(identifier);
     
     ////
     
-    sm_select_state(pre_u);
-    sm_set_flag(is_utf16, true);
-    sm_case("\"", string);
-    sm_case("8", pre_u8);
-    sm_case("R", pre_R);
-    sm_fallback_peek(identifier);
+    //sm_select_state(pre_u8);
+    //sm_set_flag(is_utf8, true);
+    //sm_case("\"", string);
+    //sm_case("R", pre_R);
+    //sm_fallback_peek(identifier);
     
     ////
     
-    sm_select_state(pre_U);
-    sm_set_flag(is_utf32, true);
-    sm_case("\"", string);
-    sm_case("R", pre_R);
-    sm_fallback_peek(identifier);
-    
-    ////
-    
-    sm_select_state(pre_u8);
-    sm_set_flag(is_utf8, true);
-    sm_case("\"", string);
-    sm_case("R", pre_R);
-    sm_fallback_peek(identifier);
-    
-    ////
-    
-    sm_select_state(pre_R);
+    //sm_select_state(pre_R);
     sm_case("\"", raw_string);
     sm_fallback_peek(identifier);
     
@@ -883,19 +815,19 @@ build_language_model(void)
     sm_select_state(string);
     {
         Emit_Rule *emit = sm_emit_rule();
-        sm_emit_handler_direct(is_wide, "LiteralStringWide");
-        sm_emit_handler_direct(is_utf8 , "LiteralStringUTF8");
-        sm_emit_handler_direct(is_utf16, "LiteralStringUTF16");
-        sm_emit_handler_direct(is_utf32, "LiteralStringUTF32");
+        //sm_emit_handler_direct(is_wide, "LiteralStringWide");
+        //sm_emit_handler_direct(is_utf8 , "LiteralStringUTF8");
+        //sm_emit_handler_direct(is_utf16, "LiteralStringUTF16");
+        //sm_emit_handler_direct(is_utf32, "LiteralStringUTF32");
         sm_emit_handler_direct("LiteralString");
         sm_case_flagged(is_char, false, "\"", emit);
     }
     {
         Emit_Rule *emit = sm_emit_rule();
-        sm_emit_handler_direct(is_wide, "LiteralCharacterWide");
-        sm_emit_handler_direct(is_utf8 , "LiteralCharacterUTF8");
-        sm_emit_handler_direct(is_utf16, "LiteralCharacterUTF16");
-        sm_emit_handler_direct(is_utf32, "LiteralCharacterUTF32");
+        //sm_emit_handler_direct(is_wide, "LiteralCharacterWide");
+        //sm_emit_handler_direct(is_utf8 , "LiteralCharacterUTF8");
+        //sm_emit_handler_direct(is_utf16, "LiteralCharacterUTF16");
+        //sm_emit_handler_direct(is_utf32, "LiteralCharacterUTF32");
         sm_emit_handler_direct("LiteralCharacter");
         sm_case_flagged(is_char, true, "\'", emit);
     }
@@ -1049,10 +981,10 @@ build_language_model(void)
     sm_select_state(raw_string_try_quote);
     {
         Emit_Rule *emit = sm_emit_rule();
-        sm_emit_handler_direct(is_wide, "LiteralStringWideRaw");
-        sm_emit_handler_direct(is_utf8 , "LiteralStringUTF8Raw");
-        sm_emit_handler_direct(is_utf16, "LiteralStringUTF16Raw");
-        sm_emit_handler_direct(is_utf32, "LiteralStringUTF32Raw");
+        //sm_emit_handler_direct(is_wide, "LiteralStringWideRaw");
+        //sm_emit_handler_direct(is_utf8 , "LiteralStringUTF8Raw");
+        //sm_emit_handler_direct(is_utf16, "LiteralStringUTF16Raw");
+        //sm_emit_handler_direct(is_utf32, "LiteralStringUTF32Raw");
         sm_emit_handler_direct("LiteralStringRaw");
         sm_case("\"", emit);
     }
@@ -1090,7 +1022,6 @@ build_language_model(void)
     
     sm_select_state(comment_block_newline);
     sm_set_flag(is_pp_body, false);
-    sm_set_flag(is_include_body, false);
     sm_fallback_peek(comment_block);
     
     ////
