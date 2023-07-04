@@ -24,8 +24,10 @@ build_language_model(void)
     //sm_char_name('|', "Or");
     //sm_char_name('^', "Xor");
     //sm_char_name('?', "Ternary");
-    sm_char_name('%', "Mod");
-    sm_char_name('/', "Div");
+    //sm_char_name('%', "Mod");
+    //sm_char_name('/', "Div");
+    sm_char_name('.', "Dot");
+    sm_char_name('-', "Minus");
     
     // Lua Direct Toke Kinds
     sm_select_base_kind(TokenBaseKind_Comment);
@@ -72,7 +74,7 @@ build_language_model(void)
     sm_op("=");
     sm_op(".");
     sm_op("+");
-    //sm_op("-");
+    sm_op("-");
     //sm_op("!");
     //sm_op("~");
     sm_op("*");
@@ -100,9 +102,6 @@ build_language_model(void)
     
     sm_op("^");
     sm_op("|");
-    sm_op("or");
-    sm_op("and");
-    sm_op("not");
     //sm_op("?");
     sm_op("=");
     //sm_op("+=");
@@ -136,6 +135,9 @@ build_language_model(void)
     sm_key("For");
     sm_key("Then");
     sm_key("Goto");
+    sm_key("Or");
+    sm_key("And");
+    sm_key("Not");
     
     sm_select_base_kind(TokenBaseKind_LiteralInteger);
     sm_key("LiteralNil", "nil");
@@ -151,6 +153,8 @@ build_language_model(void)
     Flag *is_hex = sm_add_flag(FlagResetRule_AutoZero);
     Flag *is_oct = sm_add_flag(FlagResetRule_AutoZero);
     
+    Flag *is_char = sm_add_flag(FlagResetRule_AutoZero);
+    
 #define AddState(N) State *N = sm_add_state(#N)
     
     AddState(identifier);
@@ -159,7 +163,7 @@ build_language_model(void)
     AddState(backslash);
     
     AddState(operator_or_fnumber_dot);
-    //AddState(operator_or_comment_slash);
+    AddState(operator_or_comment_minus);
     
     AddState(number);
     AddState(znumber);
@@ -187,15 +191,22 @@ build_language_model(void)
     AddState(string_esc_universal_2);
     AddState(string_esc_universal_1);
     
+    AddState(raw_string);
+    AddState(raw_string_get_delim);
+    AddState(raw_string_finish_delim);
+    AddState(raw_string_find_close);
+    AddState(raw_string_try_delim);
+    AddState(raw_string_try_quote);
+    
     //AddState(comment_block);
     //AddState(comment_block_try_close);
     //AddState(comment_block_newline);
     AddState(comment_line);
-    AddState(comment_line_backslashing);
+    //AddState(comment_line_backslashing);
     
-    Operator_Set *main_ops_without_dot_or_slash = smo_copy_op_set(main_ops);
-    smo_remove_ops_with_prefix(main_ops_without_dot_or_slash, ".");
-    smo_remove_ops_with_prefix(main_ops_without_dot_or_slash, "/");
+    Operator_Set *main_ops_without_dot_or_minus = smo_copy_op_set(main_ops);
+    smo_remove_ops_with_prefix(main_ops_without_dot_or_minus, ".");
+    smo_remove_ops_with_prefix(main_ops_without_dot_or_minus, "-");
     
     Operator_Set *main_ops_with_dot = smo_copy_op_set(main_ops);
     smo_remove_ops_without_prefix(main_ops_with_dot, ".");
@@ -222,15 +233,14 @@ build_language_model(void)
     //sm_case("\\", backslash);
     
     sm_case(".", operator_or_fnumber_dot);
-    sm_case("-", operator_or_comment_slash);
+    sm_case("-", operator_or_comment_minus);
     {
         Character_Set *char_set = smo_new_char_set();
-        smo_char_set_union_ops_firsts(char_set, main_ops_without_dot_or_slash);
-        smo_char_set_remove(char_set, ".<-");
+        smo_char_set_union_ops_firsts(char_set, main_ops_without_dot_or_minus);
+        smo_char_set_remove(char_set, ".-");
         char *char_set_array = smo_char_set_get_array(char_set);
-        State *operator_state = smo_op_set_lexer_root(main_ops_without_dot_or_slash, root, "LexError");
+        State *operator_state = smo_op_set_lexer_root(main_ops_without_dot_or_minus, root, "LexError");
         sm_case_peek(char_set_array, operator_state);
-        sm_case_peek("<", operator_state);
     }
     
     sm_case("123456789", number);
@@ -292,17 +302,11 @@ build_language_model(void)
     
     ////
     
-    sm_select_state(operator_or_comment_slash);
-    //sm_case("*", comment_block);
+    sm_select_state(operator_or_comment_minus);
     sm_case("-", comment_line);
-    //{
-    //Emit_Rule *emit = sm_emit_rule();
-    //sm_emit_handler_direct("DivEq");
-    //sm_case("=", emit);
-    //}
     {
         Emit_Rule *emit = sm_emit_rule();
-        sm_emit_handler_direct("Sub");
+        sm_emit_handler_direct("Minus");
         sm_fallback_peek(emit);
     }
     

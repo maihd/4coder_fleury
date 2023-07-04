@@ -15,8 +15,11 @@
 #include "generated/4coder_maihd_lexer_cs.cpp"
 //#include "generated/4coder_maihd_lexer_lua.h"
 //#include "generated/4coder_maihd_lexer_lua.cpp"
+#include "generated/4coder_maihd_lexer_zig.h"
+#include "generated/4coder_maihd_lexer_zig.cpp"
 #include "4coder_maihd_lang_cs.cpp"
 //#include "4coder_maihd_lang_lua.cpp"
+#include "4coder_maihd_lang_zig.cpp"
 
 // NOTE(rjf): @f4_register_languages Register languages.
 function void
@@ -92,6 +95,17 @@ F4_RegisterLanguages(void)
         //F4_Lua_PosContext,
         //F4_Lua_Highlight,
         //Lex_State_Lua);
+    }
+    
+    // @note(maihd): Zig
+    {
+        F4_RegisterLanguage(S8Lit("zig"),
+                            F4_CPP_IndexFile,
+                            lex_full_input_zig_init,
+                            lex_full_input_zig_breaks,
+                            F4_CPP_PosContext,
+                            F4_CPP_Highlight,
+                            Lex_State_Zig);
     }
 }
 
