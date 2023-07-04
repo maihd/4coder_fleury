@@ -1,5 +1,5 @@
 /*
-4coder_maihd_lua_lexer_gen.cpp - Model definition for a Jai lexer.
+4coder_maihd_lua_lexer_gen.cpp - Model definition for a Lua lexer.
 */
 
 // TOP
@@ -47,9 +47,11 @@ build_language_model(void)
     sm_select_base_kind(TokenBaseKind_ScopeOpen);
     sm_op("do");
     sm_op("then");
+    sm_op("repeat");
     sm_op("function");
     sm_select_base_kind(TokenBaseKind_ScopeClose);
     sm_op("end");
+    sm_op("until");
     
     sm_select_base_kind(TokenBaseKind_ParentheticalOpen);
     sm_op("{");
@@ -65,7 +67,7 @@ build_language_model(void)
     
     sm_select_base_kind(TokenBaseKind_Operator);
     sm_op("...");
-    //sm_op(":");
+    sm_op(":");
     //sm_op("::");
     sm_op("=");
     sm_op(".");
@@ -101,18 +103,18 @@ build_language_model(void)
     sm_op("or");
     sm_op("and");
     sm_op("not");
-    sm_op("?");
+    //sm_op("?");
     sm_op("=");
-    sm_op("+=");
-    sm_op("-=");
-    sm_op("*=");
-    sm_op("/=");
-    sm_op("%=");
+    //sm_op("+=");
+    //sm_op("-=");
+    //sm_op("*=");
+    //sm_op("/=");
+    //sm_op("%=");
     
     sm_char_name('<', "Left");
     sm_char_name('>', "Right");
-    sm_op("<<=");
-    sm_op(">>=");
+    //sm_op("<<=");
+    //sm_op(">>=");
     
     sm_select_base_kind(TokenBaseKind_StatementClose);
     sm_op(",");
@@ -143,23 +145,17 @@ build_language_model(void)
     sm_select_base_kind(TokenBaseKind_Identifier);
     sm_key_fallback("Identifier");
     
-    sm_select_base_kind(TokenBaseKind_LexError);
-    sm_key_fallback("PPUnknown");
-    
     // State Machine
     State *root = sm_begin_state_machine();
     
     Flag *is_hex = sm_add_flag(FlagResetRule_AutoZero);
     Flag *is_oct = sm_add_flag(FlagResetRule_AutoZero);
     
-    Flag *is_error_body = sm_add_flag(FlagResetRule_KeepState);
-    
 #define AddState(N) State *N = sm_add_state(#N)
     
     AddState(identifier);
     AddState(whitespace);
     AddState(whitespace_end_pp);
-    AddState(error_body);
     AddState(backslash);
     
     AddState(operator_or_fnumber_dot);
@@ -219,23 +215,22 @@ build_language_model(void)
             "ABCDEFGHIJKMNOPQSTVWXYZ"
             "_$",
             identifier);
-    //sm_case(utf8, identifier);
+    sm_case(utf8, identifier);
     
-    sm_case_flagged(is_error_body, true, " \r\t\f\v", error_body);
-    sm_case_flagged(is_error_body, false, " \r\t\f\v", whitespace);
+    sm_case(" \r\t\f\v", whitespace);
     sm_case("\n", whitespace_end_pp);
     //sm_case("\\", backslash);
     
     sm_case(".", operator_or_fnumber_dot);
-    //sm_case("-", operator_or_comment_slash);
+    sm_case("-", operator_or_comment_slash);
     {
         Character_Set *char_set = smo_new_char_set();
         smo_char_set_union_ops_firsts(char_set, main_ops_without_dot_or_slash);
-        smo_char_set_remove(char_set, ".</");
+        smo_char_set_remove(char_set, ".<-");
         char *char_set_array = smo_char_set_get_array(char_set);
         State *operator_state = smo_op_set_lexer_root(main_ops_without_dot_or_slash, root, "LexError");
         sm_case_peek(char_set_array, operator_state);
-        //sm_case_peek_flagged(is_include_body, false, "<", operator_state);
+        sm_case_peek("<", operator_state);
     }
     
     sm_case("123456789", number);
@@ -257,7 +252,7 @@ build_language_model(void)
             "_$"
             "0123456789",
             identifier);
-    //sm_case(utf8, identifier);
+    sm_case(utf8, identifier);
     {
         Emit_Rule *emit = sm_emit_rule();
         sm_emit_handler_keys(main_keys);
@@ -278,26 +273,7 @@ build_language_model(void)
     ////
     
     sm_select_state(whitespace_end_pp);
-    //sm_set_flag(is_pp_body, false);
-    //sm_set_flag(is_include_body, false);
-    sm_set_flag(is_error_body, false);
     sm_fallback_peek(whitespace);
-    
-    ////
-    
-    sm_select_state(error_body);
-    sm_case("\r", error_body);
-    {
-        Emit_Rule *emit = sm_emit_rule();
-        //sm_emit_handler_direct("PPErrorMessage");
-        sm_case_peek("\n", emit);
-    }
-    {
-        Emit_Rule *emit = sm_emit_rule();
-        //sm_emit_handler_direct("PPErrorMessage");
-        sm_case_eof_peek(emit);
-    }
-    sm_fallback(error_body);
     
     ////
     
@@ -316,19 +292,19 @@ build_language_model(void)
     
     ////
     
-    //sm_select_state(operator_or_comment_slash);
+    sm_select_state(operator_or_comment_slash);
     //sm_case("*", comment_block);
-    //sm_case("-", comment_line);
+    sm_case("-", comment_line);
     //{
     //Emit_Rule *emit = sm_emit_rule();
     //sm_emit_handler_direct("DivEq");
     //sm_case("=", emit);
     //}
-    //{
-    //Emit_Rule *emit = sm_emit_rule();
-    //sm_emit_handler_direct("Div");
-    //sm_fallback_peek(emit);
-    //}
+    {
+        Emit_Rule *emit = sm_emit_rule();
+        sm_emit_handler_direct("Sub");
+        sm_fallback_peek(emit);
+    }
     
     ////
     
@@ -692,7 +668,7 @@ build_language_model(void)
     
     //sm_select_state(pre_L);
     //sm_set_flag(is_wide, true);
-    //sm_case("\"", string);
+    sm_case("\"", string);
     //sm_case("R", pre_R);
     //sm_fallback_peek(identifier);
     
@@ -744,7 +720,7 @@ build_language_model(void)
         //sm_emit_handler_direct(is_utf32, "LiteralStringUTF32");
         sm_emit_handler_direct("LiteralString");
         sm_case_eof_peek(emit);
-        //sm_case_flagged(is_char, false, "\"", emit);
+        sm_case_flagged(is_char, false, "\"", emit);
     }
     {
         Emit_Rule *emit = sm_emit_rule();
@@ -752,9 +728,9 @@ build_language_model(void)
         //sm_emit_handler_direct(is_utf8 , "LiteralCharacterUTF8");
         //sm_emit_handler_direct(is_utf16, "LiteralCharacterUTF16");
         //sm_emit_handler_direct(is_utf32, "LiteralCharacterUTF32");
-        sm_emit_handler_direct("LiteralCharacter");
+        sm_emit_handler_direct("LiteralString");
         sm_case_eof_peek(emit);
-        //sm_case_flagged(is_char, true, "\'", emit);
+        sm_case_flagged(is_char, true, "\'", emit);
     }
     //sm_case("\\", string_esc);
     //{
@@ -859,61 +835,61 @@ build_language_model(void)
     
     ////
     
-    //sm_select_state(raw_string);
-    //sm_delim_mark_first();
-    //sm_fallback_peek(raw_string_get_delim);
+    sm_select_state(raw_string);
+    sm_delim_mark_first();
+    sm_fallback_peek(raw_string_get_delim);
     
     ////
     
-    //sm_select_state(raw_string_get_delim);
-    //sm_case_peek("(", raw_string_finish_delim);
-    //{
-    //Emit_Rule *emit = sm_emit_rule();
-    //sm_emit_handler_direct("LexError");
-    //sm_case(" \\)", emit);
-    //}
-    //{
-    //Emit_Rule *emit = sm_emit_rule();
-    //sm_emit_handler_direct("LexError");
-    //sm_case_eof_peek(emit);
-    //}
-    //sm_fallback(raw_string_get_delim);
+    sm_select_state(raw_string_get_delim);
+    sm_case_peek("(", raw_string_finish_delim);
+    {
+        Emit_Rule *emit = sm_emit_rule();
+        sm_emit_handler_direct("LexError");
+        sm_case(" \\)", emit);
+    }
+    {
+        Emit_Rule *emit = sm_emit_rule();
+        sm_emit_handler_direct("LexError");
+        sm_case_eof_peek(emit);
+    }
+    sm_fallback(raw_string_get_delim);
     
     ////
     
-    //sm_select_state(raw_string_finish_delim);
-    //sm_delim_mark_one_past_last();
-    //sm_fallback_peek(raw_string_find_close);
+    sm_select_state(raw_string_finish_delim);
+    sm_delim_mark_one_past_last();
+    sm_fallback_peek(raw_string_find_close);
     
     ////
     
-    //sm_select_state(raw_string_find_close);
-    //sm_case(")", raw_string_try_delim);
-    //{
-    //Emit_Rule *emit = sm_emit_rule();
-    //sm_emit_handler_direct("LexError");
-    //sm_case_eof_peek(emit);
-    //}
-    //sm_fallback(raw_string_find_close);
+    sm_select_state(raw_string_find_close);
+    sm_case(")", raw_string_try_delim);
+    {
+        Emit_Rule *emit = sm_emit_rule();
+        sm_emit_handler_direct("LexError");
+        sm_case_eof_peek(emit);
+    }
+    sm_fallback(raw_string_find_close);
     
     ////
     
-    //sm_select_state(raw_string_try_delim);
-    //sm_match_delim(raw_string_try_quote, raw_string_find_close);
+    sm_select_state(raw_string_try_delim);
+    sm_match_delim(raw_string_try_quote, raw_string_find_close);
     
     ////
     
-    //sm_select_state(raw_string_try_quote);
-    //{
-    //Emit_Rule *emit = sm_emit_rule();
-    //sm_emit_handler_direct(is_wide, "LiteralStringWideRaw");
-    //sm_emit_handler_direct(is_utf8 , "LiteralStringUTF8Raw");
-    //sm_emit_handler_direct(is_utf16, "LiteralStringUTF16Raw");
-    //sm_emit_handler_direct(is_utf32, "LiteralStringUTF32Raw");
-    //sm_emit_handler_direct("LiteralStringRaw");
-    //sm_case("\"", emit);
-    //}
-    //sm_fallback_peek(raw_string_find_close);
+    sm_select_state(raw_string_try_quote);
+    {
+        Emit_Rule *emit = sm_emit_rule();
+        //sm_emit_handler_direct(is_wide, "LiteralStringWideRaw");
+        //sm_emit_handler_direct(is_utf8 , "LiteralStringUTF8Raw");
+        //sm_emit_handler_direct(is_utf16, "LiteralStringUTF16Raw");
+        //sm_emit_handler_direct(is_utf32, "LiteralStringUTF32Raw");
+        sm_emit_handler_direct("LiteralString");
+        sm_case("\"", emit);
+    }
+    sm_fallback_peek(raw_string_find_close);
     
     ////
     
@@ -963,12 +939,12 @@ build_language_model(void)
         sm_emit_handler_direct("LineComment");
         sm_case_eof_peek(emit);
     }
-    sm_case("\\", comment_line_backslashing);
-    sm_fallback(comment_line);
+    //sm_case("\\", comment_line_backslashing);
+    //sm_fallback(comment_line);
     
-    sm_select_state(comment_line_backslashing);
-    sm_case("\r", comment_line_backslashing);
-    sm_fallback(comment_line);
+    //sm_select_state(comment_line_backslashing);
+    //sm_case("\r", comment_line_backslashing);
+    //sm_fallback(comment_line);
 }
 
 //! EOF
