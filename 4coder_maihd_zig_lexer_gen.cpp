@@ -198,6 +198,7 @@ build_language_model(void){
     sm_key("Const");
     sm_key("Break");
     sm_key("Defer");
+    sm_key("Error");
     sm_key("ErrDefer");
     sm_key("Continue");
     sm_key("Unreachable");
@@ -210,7 +211,6 @@ build_language_model(void){
     sm_key("Switch");
     sm_key("Try");
     sm_key("While");
-    sm_key("Class");
     sm_key("Enum");
     sm_key("Struct");
     sm_key("Union");
@@ -221,7 +221,7 @@ build_language_model(void){
     sm_key("Export");
     sm_key("Inline");
     sm_key("Static");
-    sm_key("AlignAs");
+    sm_key("Align");
     sm_key("Null");
     sm_key("ThreadLocal", "threadlocal");
     sm_key("AlignOf");
@@ -229,7 +229,30 @@ build_language_model(void){
     sm_key("Type");
     sm_key("AnyType");
     sm_key("AnyError");
+    sm_key("AnyFrame");
     sm_key("AnyOpaque");
+    sm_key("CallConvention");
+    sm_key("AddrSpace");
+    sm_key("AllowZero");
+    sm_key("Asm");
+    sm_key("Async");
+    sm_key("Await");
+    sm_key("Catch");
+    sm_key("NoAlias");
+    sm_key("NoInline");
+    sm_key("NoSuspend");
+    sm_key("LinkSection");
+    sm_key("And");
+    sm_key("Or");
+    sm_key("OrElse");
+    sm_key("Packed");
+    sm_key("Resume");
+    sm_key("Suspend");
+    sm_key("Test");
+    sm_key("UnReachable");
+    sm_key("UsingNamespace");
+    sm_key("Var");
+    sm_key("Volatile");
     
     sm_select_base_kind(TokenBaseKind_LiteralInteger);
     sm_key("LiteralTrue", "true");

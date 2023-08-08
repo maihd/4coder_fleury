@@ -43,588 +43,448 @@ lexeme_table_lookup(u64 *hash_array, String_Const_u8 *key_array,
 }
 
 #endif
-u64 zig_main_keys_hash_array[172] = {
-0x0277de1a7ca05d7d,0x0000000000000000,0x0000000000000000,0x0000000000000000,
-0x9b2b25a7b00a5721,0xbc65c96fdae221cd,0xe64b06b84db21c09,0xe64b049dbd00fa17,
-0xbc65c96fc14f6e95,0x0000000000000000,0x0000000000000000,0x0277de112448a297,
-0x8ea57dff69b2dd79,0x0000000000000000,0x0000000000000000,0x0000000000000000,
-0x83adc98fee542b49,0xbc65c96feb0db2cd,0x0277de220349f077,0x0000000000000000,
-0x0277de193dbac365,0x0000000000000000,0x0e24a8b7d0b61003,0x0277de15feaafe57,
-0x9b2b25a7b00a634d,0xbc65c96fc268ef49,0xa8a0b1d161470c15,0x0000000000000000,
-0x9b2b25a7b00a568d,0x0000000000000000,0x0000000000000000,0x0000000000000000,
-0x0000000000000000,0x0000000000000000,0x0000000000000000,0x2807d79d51154897,
-0x83adbf907f01d73d,0x0000000000000000,0x0000000000000000,0x8ea57dff69270813,
-0x0000000000000000,0xe64b04ed46ec7639,0x0277de1a7ddb8c77,0x0000000000000000,
-0xbc65c96fc0c2a759,0x8ea57dff693555d1,0x0e24a8b7d0b612cb,0x0000000000000000,
-0x9b2b25a7b00a6365,0x0000000000000000,0x0000000000000000,0x28040e831fbbb577,
-0x0000000000000000,0xbc65c96fce103301,0x0000000000000000,0x8ea57dff69ff3477,
-0x0000000000000000,0x0277de220c0b9729,0x7029f04db640c827,0x83ac3125bb7e44b7,
-0x8ea57dff69224561,0x0000000000000000,0x0277de1152ab5367,0xf9ed6d5bcc45a817,
-0x0000000000000000,0x0000000000000000,0x0000000000000000,0x0277de1932ef4417,
-0x2809af589b804377,0x9b2b25a7b00d075f,0x9b2b25a7b00d3261,0x83adc98febf2b0a7,
-0x0000000000000000,0x0000000000000000,0x8ea57dff69c72b57,0xbc65c96fc22aa1d7,
-0x83adcb18975331d9,0x0277de10da59db65,0x0000000000000000,0x0000000000000000,
+u64 cpp_main_keys_hash_array[121] = {
+0x37dbd51d70e155c9,0x0000000000000000,0x57decae2f55c3d49,0x37dbd51bbc5e1c73,
+0x0000000000000000,0xf330e0d7833181c9,0x57def696bd543e89,0x0000000000000000,
+0x0000000000000000,0x0000000000000000,0x37dbd572458dd737,0x138f5c6fa31d091b,
 0x0000000000000000,0x0000000000000000,0x0000000000000000,0x0000000000000000,
-0x9b2b25a7b00d4949,0x9b2b25a7b00a9949,0x0277de15fff1c1b7,0x3124c2cc0167ca77,
+0x524d0480d6535a77,0x0000000000000000,0xf330e0d78336aa6f,0x0000000000000000,
+0x0000000000000000,0x37c06ec52ad58377,0x37dbd57244d2601b,0x37dbd5680898d49d,
+0x57df069845e1ac21,0x6ca672f98630d97d,0x0000000000000000,0xdeb718ddab4d213f,
 0x0000000000000000,0x0000000000000000,0x0000000000000000,0x0000000000000000,
-0x28e03453ac725ce5,0x9b2b25a7b00dc6f5,0x0000000000000000,0x0000000000000000,
-0x0000000000000000,0x8ea57dff69ff4619,0x83ac31204b4ae265,0x83ac46eec41a6469,
-0x0000000000000000,0x0000000000000000,0xbc65c96fc06eaceb,0x83adaac5611c4bd7,
-0x9b2b25a7b00d5f89,0x0000000000000000,0xbc65c96fcb51f84f,0x0000000000000000,
-0x0000000000000000,0x0000000000000000,0x0000000000000000,0xbc65c96fc10b3393,
-0xe64b04ea27ad7c15,0xafe0d77afeaadd15,0x0000000000000000,0x8ea57dff69da7dd7,
-0x7a02ce68e1aa74d5,0x0000000000000000,0x8ea57dff6928b45f,0x0000000000000000,
-0x0000000000000000,0x0000000000000000,0xc2ff541455b22f8f,0x0277de11221b0dd7,
-0x8ea57dff69d88f61,0x0000000000000000,0x0000000000000000,0x8ea57dff69db79d7,
-0xe64b049d4bbee33d,0x0000000000000000,0x0277de2209a188eb,0xa4e5a4741dd72817,
+0x0000000000000000,0x57de7ec15b24f089,0x37dbd572429ce3f3,0x0000000000000000,
+0xdeb718ddaae0e62b,0xdeb718dd71646925,0x86f257b8cba535e9,0x37dbd570ade720bd,
+0x0000000000000000,0x0000000000000000,0x37dbd573f7a523bd,0x0000000000000000,
+0x37dbd56a0f8e5afb,0x433fe5fed57c0a0b,0x57cbed1774cac347,0x0000000000000000,
+0xdeb718ddaa06828b,0x0000000000000000,0x524d0480d70b34c3,0x0000000000000000,
+0x0000000000000000,0x0000000000000000,0x37dbd51df8ce3809,0x0000000000000000,
+0x57cc4189dc0b94f5,0x57de6c49d6b537e5,0x433f94c2d79acde3,0xf330e0d78336bd07,
+0x0000000000000000,0x6ca672f98630d837,0xdeb718dda98b0aa9,0x0000000000000000,
+0x0000000000000000,0x0000000000000000,0x0000000000000000,0xdeb718dd4259ec83,
+0x524d0480d6bc8d33,0x524d0480d71d7e05,0x37dbd51c57596c9d,0x0000000000000000,
+0x524d0480d65ab2e9,0xf31975eccb54cff3,0x524d0480d653e711,0x57def55e5afa993b,
+0x37dbd5735269263b,0x0000000000000000,0xdeb718ddaae20e37,0x0000000000000000,
 0x0000000000000000,0x0000000000000000,0x0000000000000000,0x0000000000000000,
-0x9b2b25a7b00d4b81,0xbc65c96fd8d39a15,0x9b2b25a7b00a3c19,0x0000000000000000,
-0x0277de1932320e39,0x0000000000000000,0x0000000000000000,0x0000000000000000,
-0x9b2b25a7b00a5655,0x0000000000000000,0xbc65c96fce22244f,0x0000000000000000,
-0xbe194c6d06713425,0x0e24a8b7d0b61285,0x0e24a8b7d0b60dd3,0x0000000000000000,
-0x9cd19743657cc015,0xe64b0288ecd92ee5,0x8ea57dff69ff8627,0x0e24a8b7d0b60c7f,
-0x0000000000000000,0x0000000000000000,0x0000000000000000,0x0000000000000000,
-0x8ea57dff69216761,0x9b2b25a7b00d483d,0x0000000000000000,0x0000000000000000,
-0x0000000000000000,0x0000000000000000,0x0000000000000000,0x83adab71478090ef,
-0x9b2b25a7b00a6331,0xbc65c96fca9a0225,0xbc65c96f17968e69,0x0000000000000000,
+0x57cc1cec96ac5009,0x0000000000000000,0x433f96ea6d183409,0x524d0480d67ed553,
+0x0000000000000000,0x0000000000000000,0xdeb718dd73e39989,0x37dbd51c57485827,
+0x0000000000000000,0xf330e0d78336d3d9,0x0000000000000000,0x82abfe6347c01d5b,
+0x433fe5fed57c0ab5,0xf330e0d783374731,0x433f9777a21ee9dd,0x0000000000000000,
+0x0000000000000000,0x433fe5896e6599ff,0x433f9681e3c561f1,0x0000000000000000,
+0x23cd623790ebc91b,0x0000000000000000,0x0000000000000000,0x0000000000000000,
+0x67433a745c386d1b,0x74bacda927818d1b,0x37dbd51f9299567f,0x524d0480d6520429,
+0x0000000000000000,0x524d0480d7057e9b,0xdeb718dd52021ea7,0x524d0480d65d14cd,
+0xdeb718dd72c902c3,0x0000000000000000,0x0000000000000000,0x57cc07d2d41323ab,
+0x0000000000000000,
 };
-u8 zig_main_keys_key_array_0[] = {0x65,0x78,0x70,0x6f,0x72,0x74,};
-u8 zig_main_keys_key_array_4[] = {0x75,0x33,0x32,};
-u8 zig_main_keys_key_array_5[] = {0x75,0x73,0x69,0x7a,0x65,};
-u8 zig_main_keys_key_array_6[] = {0x6e,0x6f,0x61,0x6c,0x69,0x61,0x73,};
-u8 zig_main_keys_key_array_7[] = {0x63,0x5f,0x75,0x6c,0x6f,0x6e,0x67,};
-u8 zig_main_keys_key_array_8[] = {0x61,0x6c,0x69,0x67,0x6e,};
-u8 zig_main_keys_key_array_11[] = {0x6f,0x70,0x61,0x71,0x75,0x65,};
-u8 zig_main_keys_key_array_12[] = {0x63,0x68,0x61,0x72,};
-u8 zig_main_keys_key_array_16[] = {0x61,0x6e,0x79,0x65,0x72,0x72,0x6f,0x72,};
-u8 zig_main_keys_key_array_17[] = {0x69,0x73,0x69,0x7a,0x65,};
-u8 zig_main_keys_key_array_18[] = {0x73,0x74,0x72,0x75,0x63,0x74,};
-u8 zig_main_keys_key_array_20[] = {0x63,0x5f,0x75,0x69,0x6e,0x74,};
-u8 zig_main_keys_key_array_22[] = {0x75,0x38,};
-u8 zig_main_keys_key_array_23[] = {0x72,0x65,0x73,0x75,0x6d,0x65,};
-u8 zig_main_keys_key_array_24[] = {0x69,0x31,0x36,};
-u8 zig_main_keys_key_array_25[] = {0x65,0x72,0x72,0x6f,0x72,};
-u8 zig_main_keys_key_array_26[] = {0x75,0x6e,0x72,0x65,0x61,0x63,0x68,0x61,0x62,0x6c,0x65,};
-u8 zig_main_keys_key_array_28[] = {0x75,0x31,0x36,};
-u8 zig_main_keys_key_array_35[] = {0x61,0x6e,0x79,0x6f,0x70,0x61,0x71,0x75,0x65,};
-u8 zig_main_keys_key_array_36[] = {0x63,0x5f,0x75,0x73,0x68,0x6f,0x72,0x74,};
-u8 zig_main_keys_key_array_39[] = {0x67,0x6f,0x74,0x6f,};
-u8 zig_main_keys_key_array_41[] = {0x61,0x6e,0x79,0x74,0x79,0x70,0x65,};
-u8 zig_main_keys_key_array_42[] = {0x65,0x78,0x74,0x65,0x72,0x6e,};
-u8 zig_main_keys_key_array_44[] = {0x64,0x65,0x66,0x65,0x72,};
-u8 zig_main_keys_key_array_45[] = {0x6e,0x75,0x6c,0x6c,};
-u8 zig_main_keys_key_array_46[] = {0x69,0x38,};
-u8 zig_main_keys_key_array_48[] = {0x69,0x36,0x34,};
-u8 zig_main_keys_key_array_51[] = {0x61,0x6c,0x6c,0x6f,0x77,0x7a,0x65,0x72,0x6f,};
-u8 zig_main_keys_key_array_53[] = {0x62,0x72,0x65,0x61,0x6b,};
-u8 zig_main_keys_key_array_55[] = {0x74,0x72,0x75,0x65,};
-u8 zig_main_keys_key_array_57[] = {0x73,0x74,0x61,0x74,0x69,0x63,};
-u8 zig_main_keys_key_array_58[] = {0x74,0x68,0x72,0x65,0x61,0x64,0x6c,0x6f,0x63,0x61,0x6c,};
-u8 zig_main_keys_key_array_59[] = {0x6e,0x6f,0x72,0x65,0x74,0x75,0x72,0x6e,};
-u8 zig_main_keys_key_array_60[] = {0x75,0x31,0x32,0x38,};
-u8 zig_main_keys_key_array_62[] = {0x70,0x61,0x63,0x6b,0x65,0x64,};
-u8 zig_main_keys_key_array_63[] = {0x63,0x5f,0x75,0x6c,0x6f,0x6e,0x67,0x6c,0x6f,0x6e,0x67,};
-u8 zig_main_keys_key_array_67[] = {0x63,0x5f,0x6c,0x6f,0x6e,0x67,};
-u8 zig_main_keys_key_array_68[] = {0x61,0x64,0x64,0x72,0x73,0x70,0x61,0x63,0x65,};
-u8 zig_main_keys_key_array_69[] = {0x61,0x73,0x6d,};
-u8 zig_main_keys_key_array_70[] = {0x66,0x38,0x30,};
-u8 zig_main_keys_key_array_71[] = {0x61,0x6e,0x79,0x66,0x72,0x61,0x6d,0x65,};
-u8 zig_main_keys_key_array_74[] = {0x62,0x6f,0x6f,0x6c,};
-u8 zig_main_keys_key_array_75[] = {0x66,0x61,0x6c,0x73,0x65,};
-u8 zig_main_keys_key_array_76[] = {0x65,0x72,0x72,0x64,0x65,0x66,0x65,0x72,};
-u8 zig_main_keys_key_array_77[] = {0x69,0x6e,0x6c,0x69,0x6e,0x65,};
-u8 zig_main_keys_key_array_84[] = {0x66,0x36,0x34,};
-u8 zig_main_keys_key_array_85[] = {0x70,0x75,0x62,};
-u8 zig_main_keys_key_array_86[] = {0x72,0x65,0x74,0x75,0x72,0x6e,};
-u8 zig_main_keys_key_array_87[] = {0x75,0x73,0x69,0x6e,0x67,0x6e,0x61,0x6d,0x65,0x73,0x70,0x61,0x63,0x65,};
-u8 zig_main_keys_key_array_92[] = {0x6e,0x6f,0x73,0x75,0x73,0x70,0x65,0x6e,0x64,};
-u8 zig_main_keys_key_array_93[] = {0x74,0x72,0x79,};
-u8 zig_main_keys_key_array_97[] = {0x74,0x79,0x70,0x65,};
-u8 zig_main_keys_key_array_98[] = {0x6e,0x6f,0x69,0x6e,0x6c,0x69,0x6e,0x65,};
-u8 zig_main_keys_key_array_99[] = {0x76,0x6f,0x6c,0x61,0x74,0x69,0x6c,0x65,};
-u8 zig_main_keys_key_array_102[] = {0x63,0x61,0x74,0x63,0x68,};
-u8 zig_main_keys_key_array_103[] = {0x63,0x6f,0x6d,0x70,0x74,0x69,0x6d,0x65,};
-u8 zig_main_keys_key_array_104[] = {0x66,0x6f,0x72,};
-u8 zig_main_keys_key_array_106[] = {0x63,0x6f,0x6e,0x73,0x74,};
-u8 zig_main_keys_key_array_111[] = {0x61,0x73,0x79,0x6e,0x63,};
-u8 zig_main_keys_key_array_112[] = {0x61,0x6c,0x69,0x67,0x6e,0x6f,0x66,};
-u8 zig_main_keys_key_array_113[] = {0x63,0x5f,0x6c,0x6f,0x6e,0x67,0x64,0x6f,0x75,0x62,0x6c,0x65,};
-u8 zig_main_keys_key_array_115[] = {0x65,0x6e,0x75,0x6d,};
-u8 zig_main_keys_key_array_116[] = {0x6c,0x69,0x6e,0x6b,0x73,0x65,0x63,0x74,0x69,0x6f,0x6e,};
-u8 zig_main_keys_key_array_118[] = {0x76,0x6f,0x69,0x64,};
-u8 zig_main_keys_key_array_122[] = {0x63,0x6f,0x6d,0x70,0x74,0x69,0x6d,0x65,0x5f,0x66,0x6c,0x6f,0x61,0x74,};
-u8 zig_main_keys_key_array_123[] = {0x6f,0x72,0x65,0x6c,0x73,0x65,};
-u8 zig_main_keys_key_array_124[] = {0x66,0x31,0x32,0x38,};
-u8 zig_main_keys_key_array_127[] = {0x65,0x6c,0x73,0x65,};
-u8 zig_main_keys_key_array_128[] = {0x63,0x5f,0x73,0x68,0x6f,0x72,0x74,};
-u8 zig_main_keys_key_array_130[] = {0x73,0x77,0x69,0x74,0x63,0x68,};
-u8 zig_main_keys_key_array_131[] = {0x63,0x5f,0x6c,0x6f,0x6e,0x67,0x6c,0x6f,0x6e,0x67,};
-u8 zig_main_keys_key_array_136[] = {0x66,0x33,0x32,};
-u8 zig_main_keys_key_array_137[] = {0x75,0x6e,0x69,0x6f,0x6e,};
-u8 zig_main_keys_key_array_138[] = {0x76,0x61,0x72,};
-u8 zig_main_keys_key_array_140[] = {0x63,0x5f,0x63,0x68,0x61,0x72,};
-u8 zig_main_keys_key_array_144[] = {0x75,0x36,0x34,};
-u8 zig_main_keys_key_array_146[] = {0x61,0x77,0x61,0x69,0x74,};
-u8 zig_main_keys_key_array_148[] = {0x63,0x6f,0x6d,0x70,0x74,0x69,0x6d,0x65,0x5f,0x69,0x6e,0x74,};
-u8 zig_main_keys_key_array_149[] = {0x69,0x66,};
-u8 zig_main_keys_key_array_150[] = {0x66,0x6e,};
-u8 zig_main_keys_key_array_152[] = {0x63,0x61,0x6c,0x6c,0x63,0x6f,0x6e,0x76,0x65,0x6e,0x74,0x69,0x6f,0x6e,};
-u8 zig_main_keys_key_array_153[] = {0x73,0x75,0x73,0x70,0x65,0x6e,0x64,};
-u8 zig_main_keys_key_array_154[] = {0x74,0x65,0x73,0x74,};
-u8 zig_main_keys_key_array_155[] = {0x64,0x6f,};
-u8 zig_main_keys_key_array_160[] = {0x69,0x31,0x32,0x38,};
-u8 zig_main_keys_key_array_161[] = {0x66,0x31,0x36,};
-u8 zig_main_keys_key_array_167[] = {0x63,0x6f,0x6e,0x74,0x69,0x6e,0x75,0x65,};
-u8 zig_main_keys_key_array_168[] = {0x69,0x33,0x32,};
-u8 zig_main_keys_key_array_169[] = {0x63,0x5f,0x69,0x6e,0x74,};
-u8 zig_main_keys_key_array_170[] = {0x77,0x68,0x69,0x6c,0x65,};
-String_Const_u8 zig_main_keys_key_array[172] = {
-{zig_main_keys_key_array_0, 6},
-{0, 0},
-{0, 0},
-{0, 0},
-{zig_main_keys_key_array_4, 3},
-{zig_main_keys_key_array_5, 5},
-{zig_main_keys_key_array_6, 7},
-{zig_main_keys_key_array_7, 7},
-{zig_main_keys_key_array_8, 5},
+u8 cpp_main_keys_key_array_0[] = {0x64,0x6f,0x75,0x62,0x6c,0x65,};
+u8 cpp_main_keys_key_array_2[] = {0x72,0x65,0x67,0x69,0x73,0x74,0x65,0x72,};
+u8 cpp_main_keys_key_array_3[] = {0x70,0x75,0x62,0x6c,0x69,0x63,};
+u8 cpp_main_keys_key_array_5[] = {0x74,0x72,0x79,};
+u8 cpp_main_keys_key_array_6[] = {0x76,0x6f,0x6c,0x61,0x74,0x69,0x6c,0x65,};
+u8 cpp_main_keys_key_array_10[] = {0x73,0x77,0x69,0x74,0x63,0x68,};
+u8 cpp_main_keys_key_array_11[] = {0x63,0x6f,0x6e,0x73,0x74,0x5f,0x63,0x61,0x73,0x74,};
+u8 cpp_main_keys_key_array_16[] = {0x67,0x6f,0x74,0x6f,};
+u8 cpp_main_keys_key_array_18[] = {0x69,0x6e,0x74,};
+u8 cpp_main_keys_key_array_21[] = {0x73,0x74,0x61,0x74,0x69,0x63,0x5f,0x61,0x73,0x73,0x65,0x72,0x74,};
+u8 cpp_main_keys_key_array_22[] = {0x73,0x74,0x72,0x75,0x63,0x74,};
+u8 cpp_main_keys_key_array_23[] = {0x72,0x65,0x74,0x75,0x72,0x6e,};
+u8 cpp_main_keys_key_array_24[] = {0x6f,0x70,0x65,0x72,0x61,0x74,0x6f,0x72,};
+u8 cpp_main_keys_key_array_25[] = {0x69,0x66,};
+u8 cpp_main_keys_key_array_27[] = {0x63,0x6c,0x61,0x73,0x73,};
+u8 cpp_main_keys_key_array_33[] = {0x74,0x65,0x6d,0x70,0x6c,0x61,0x74,0x65,};
+u8 cpp_main_keys_key_array_34[] = {0x73,0x74,0x61,0x74,0x69,0x63,};
+u8 cpp_main_keys_key_array_36[] = {0x63,0x6f,0x6e,0x73,0x74,};
+u8 cpp_main_keys_key_array_37[] = {0x75,0x6e,0x69,0x6f,0x6e,};
+u8 cpp_main_keys_key_array_38[] = {0x6e,0x61,0x6d,0x65,0x73,0x70,0x61,0x63,0x65,};
+u8 cpp_main_keys_key_array_39[] = {0x73,0x69,0x7a,0x65,0x6f,0x66,};
+u8 cpp_main_keys_key_array_42[] = {0x69,0x6e,0x6c,0x69,0x6e,0x65,};
+u8 cpp_main_keys_key_array_44[] = {0x74,0x79,0x70,0x65,0x69,0x64,};
+u8 cpp_main_keys_key_array_45[] = {0x61,0x6c,0x69,0x67,0x6e,0x61,0x73,};
+u8 cpp_main_keys_key_array_46[] = {0x6e,0x6f,0x65,0x78,0x63,0x65,0x70,0x74,};
+u8 cpp_main_keys_key_array_48[] = {0x66,0x6c,0x6f,0x61,0x74,};
+u8 cpp_main_keys_key_array_50[] = {0x74,0x68,0x69,0x73,};
+u8 cpp_main_keys_key_array_54[] = {0x64,0x65,0x6c,0x65,0x74,0x65,};
+u8 cpp_main_keys_key_array_56[] = {0x63,0x6f,0x6e,0x74,0x69,0x6e,0x75,0x65,};
+u8 cpp_main_keys_key_array_57[] = {0x74,0x79,0x70,0x65,0x6e,0x61,0x6d,0x65,};
+u8 cpp_main_keys_key_array_58[] = {0x76,0x69,0x72,0x74,0x75,0x61,0x6c,};
+u8 cpp_main_keys_key_array_59[] = {0x6e,0x65,0x77,};
+u8 cpp_main_keys_key_array_61[] = {0x64,0x6f,};
+u8 cpp_main_keys_key_array_62[] = {0x66,0x61,0x6c,0x73,0x65,};
+u8 cpp_main_keys_key_array_67[] = {0x62,0x72,0x65,0x61,0x6b,};
+u8 cpp_main_keys_key_array_68[] = {0x62,0x6f,0x6f,0x6c,};
+u8 cpp_main_keys_key_array_69[] = {0x74,0x72,0x75,0x65,};
+u8 cpp_main_keys_key_array_70[] = {0x65,0x78,0x74,0x65,0x72,0x6e,};
+u8 cpp_main_keys_key_array_72[] = {0x65,0x6c,0x73,0x65,};
+u8 cpp_main_keys_key_array_73[] = {0x74,0x68,0x72,0x65,0x61,0x64,0x5f,0x6c,0x6f,0x63,0x61,0x6c,};
+u8 cpp_main_keys_key_array_74[] = {0x63,0x68,0x61,0x72,};
+u8 cpp_main_keys_key_array_75[] = {0x75,0x6e,0x73,0x69,0x67,0x6e,0x65,0x64,};
+u8 cpp_main_keys_key_array_76[] = {0x73,0x69,0x67,0x6e,0x65,0x64,};
+u8 cpp_main_keys_key_array_78[] = {0x63,0x61,0x74,0x63,0x68,};
+u8 cpp_main_keys_key_array_84[] = {0x64,0x65,0x63,0x6c,0x74,0x79,0x70,0x65,};
+u8 cpp_main_keys_key_array_86[] = {0x70,0x72,0x69,0x76,0x61,0x74,0x65,};
+u8 cpp_main_keys_key_array_87[] = {0x6c,0x6f,0x6e,0x67,};
+u8 cpp_main_keys_key_array_90[] = {0x77,0x68,0x69,0x6c,0x65,};
+u8 cpp_main_keys_key_array_91[] = {0x65,0x78,0x70,0x6f,0x72,0x74,};
+u8 cpp_main_keys_key_array_93[] = {0x66,0x6f,0x72,};
+u8 cpp_main_keys_key_array_95[] = {0x70,0x72,0x6f,0x74,0x65,0x63,0x74,0x65,0x64,};
+u8 cpp_main_keys_key_array_96[] = {0x61,0x6c,0x69,0x67,0x6e,0x6f,0x66,};
+u8 cpp_main_keys_key_array_97[] = {0x61,0x73,0x6d,};
+u8 cpp_main_keys_key_array_98[] = {0x74,0x79,0x70,0x65,0x64,0x65,0x66,};
+u8 cpp_main_keys_key_array_101[] = {0x64,0x65,0x66,0x61,0x75,0x6c,0x74,};
+u8 cpp_main_keys_key_array_102[] = {0x6e,0x75,0x6c,0x6c,0x70,0x74,0x72,};
+u8 cpp_main_keys_key_array_104[] = {0x72,0x65,0x69,0x6e,0x74,0x65,0x72,0x70,0x72,0x65,0x74,0x5f,0x63,0x61,0x73,0x74,};
+u8 cpp_main_keys_key_array_108[] = {0x73,0x74,0x61,0x74,0x69,0x63,0x5f,0x63,0x61,0x73,0x74,};
+u8 cpp_main_keys_key_array_109[] = {0x64,0x79,0x6e,0x61,0x6d,0x69,0x63,0x5f,0x63,0x61,0x73,0x74,};
+u8 cpp_main_keys_key_array_110[] = {0x66,0x72,0x69,0x65,0x6e,0x64,};
+u8 cpp_main_keys_key_array_111[] = {0x63,0x61,0x73,0x65,};
+u8 cpp_main_keys_key_array_113[] = {0x76,0x6f,0x69,0x64,};
+u8 cpp_main_keys_key_array_114[] = {0x73,0x68,0x6f,0x72,0x74,};
+u8 cpp_main_keys_key_array_115[] = {0x65,0x6e,0x75,0x6d,};
+u8 cpp_main_keys_key_array_116[] = {0x75,0x73,0x69,0x6e,0x67,};
+u8 cpp_main_keys_key_array_119[] = {0x65,0x78,0x70,0x6c,0x69,0x63,0x69,0x74,};
+String_Const_u8 cpp_main_keys_key_array[121] = {
+{cpp_main_keys_key_array_0, 6},
 {0, 0},
+{cpp_main_keys_key_array_2, 8},
+{cpp_main_keys_key_array_3, 6},
 {0, 0},
-{zig_main_keys_key_array_11, 6},
-{zig_main_keys_key_array_12, 4},
+{cpp_main_keys_key_array_5, 3},
+{cpp_main_keys_key_array_6, 8},
 {0, 0},
 {0, 0},
 {0, 0},
-{zig_main_keys_key_array_16, 8},
-{zig_main_keys_key_array_17, 5},
-{zig_main_keys_key_array_18, 6},
+{cpp_main_keys_key_array_10, 6},
+{cpp_main_keys_key_array_11, 10},
 {0, 0},
-{zig_main_keys_key_array_20, 6},
 {0, 0},
-{zig_main_keys_key_array_22, 2},
-{zig_main_keys_key_array_23, 6},
-{zig_main_keys_key_array_24, 3},
-{zig_main_keys_key_array_25, 5},
-{zig_main_keys_key_array_26, 11},
 {0, 0},
-{zig_main_keys_key_array_28, 3},
 {0, 0},
+{cpp_main_keys_key_array_16, 4},
 {0, 0},
+{cpp_main_keys_key_array_18, 3},
 {0, 0},
 {0, 0},
+{cpp_main_keys_key_array_21, 13},
+{cpp_main_keys_key_array_22, 6},
+{cpp_main_keys_key_array_23, 6},
+{cpp_main_keys_key_array_24, 8},
+{cpp_main_keys_key_array_25, 2},
 {0, 0},
+{cpp_main_keys_key_array_27, 5},
 {0, 0},
-{zig_main_keys_key_array_35, 9},
-{zig_main_keys_key_array_36, 8},
 {0, 0},
 {0, 0},
-{zig_main_keys_key_array_39, 4},
 {0, 0},
-{zig_main_keys_key_array_41, 7},
-{zig_main_keys_key_array_42, 6},
 {0, 0},
-{zig_main_keys_key_array_44, 5},
-{zig_main_keys_key_array_45, 4},
-{zig_main_keys_key_array_46, 2},
+{cpp_main_keys_key_array_33, 8},
+{cpp_main_keys_key_array_34, 6},
 {0, 0},
-{zig_main_keys_key_array_48, 3},
+{cpp_main_keys_key_array_36, 5},
+{cpp_main_keys_key_array_37, 5},
+{cpp_main_keys_key_array_38, 9},
+{cpp_main_keys_key_array_39, 6},
 {0, 0},
 {0, 0},
-{zig_main_keys_key_array_51, 9},
+{cpp_main_keys_key_array_42, 6},
 {0, 0},
-{zig_main_keys_key_array_53, 5},
+{cpp_main_keys_key_array_44, 6},
+{cpp_main_keys_key_array_45, 7},
+{cpp_main_keys_key_array_46, 8},
 {0, 0},
-{zig_main_keys_key_array_55, 4},
+{cpp_main_keys_key_array_48, 5},
 {0, 0},
-{zig_main_keys_key_array_57, 6},
-{zig_main_keys_key_array_58, 11},
-{zig_main_keys_key_array_59, 8},
-{zig_main_keys_key_array_60, 4},
+{cpp_main_keys_key_array_50, 4},
 {0, 0},
-{zig_main_keys_key_array_62, 6},
-{zig_main_keys_key_array_63, 11},
 {0, 0},
 {0, 0},
+{cpp_main_keys_key_array_54, 6},
 {0, 0},
-{zig_main_keys_key_array_67, 6},
-{zig_main_keys_key_array_68, 9},
-{zig_main_keys_key_array_69, 3},
-{zig_main_keys_key_array_70, 3},
-{zig_main_keys_key_array_71, 8},
+{cpp_main_keys_key_array_56, 8},
+{cpp_main_keys_key_array_57, 8},
+{cpp_main_keys_key_array_58, 7},
+{cpp_main_keys_key_array_59, 3},
 {0, 0},
+{cpp_main_keys_key_array_61, 2},
+{cpp_main_keys_key_array_62, 5},
 {0, 0},
-{zig_main_keys_key_array_74, 4},
-{zig_main_keys_key_array_75, 5},
-{zig_main_keys_key_array_76, 8},
-{zig_main_keys_key_array_77, 6},
 {0, 0},
 {0, 0},
 {0, 0},
+{cpp_main_keys_key_array_67, 5},
+{cpp_main_keys_key_array_68, 4},
+{cpp_main_keys_key_array_69, 4},
+{cpp_main_keys_key_array_70, 6},
 {0, 0},
+{cpp_main_keys_key_array_72, 4},
+{cpp_main_keys_key_array_73, 12},
+{cpp_main_keys_key_array_74, 4},
+{cpp_main_keys_key_array_75, 8},
+{cpp_main_keys_key_array_76, 6},
 {0, 0},
+{cpp_main_keys_key_array_78, 5},
 {0, 0},
-{zig_main_keys_key_array_84, 3},
-{zig_main_keys_key_array_85, 3},
-{zig_main_keys_key_array_86, 6},
-{zig_main_keys_key_array_87, 14},
 {0, 0},
 {0, 0},
 {0, 0},
 {0, 0},
-{zig_main_keys_key_array_92, 9},
-{zig_main_keys_key_array_93, 3},
+{cpp_main_keys_key_array_84, 8},
 {0, 0},
+{cpp_main_keys_key_array_86, 7},
+{cpp_main_keys_key_array_87, 4},
 {0, 0},
 {0, 0},
-{zig_main_keys_key_array_97, 4},
-{zig_main_keys_key_array_98, 8},
-{zig_main_keys_key_array_99, 8},
+{cpp_main_keys_key_array_90, 5},
+{cpp_main_keys_key_array_91, 6},
 {0, 0},
+{cpp_main_keys_key_array_93, 3},
 {0, 0},
-{zig_main_keys_key_array_102, 5},
-{zig_main_keys_key_array_103, 8},
-{zig_main_keys_key_array_104, 3},
+{cpp_main_keys_key_array_95, 9},
+{cpp_main_keys_key_array_96, 7},
+{cpp_main_keys_key_array_97, 3},
+{cpp_main_keys_key_array_98, 7},
 {0, 0},
-{zig_main_keys_key_array_106, 5},
 {0, 0},
+{cpp_main_keys_key_array_101, 7},
+{cpp_main_keys_key_array_102, 7},
 {0, 0},
+{cpp_main_keys_key_array_104, 16},
 {0, 0},
 {0, 0},
-{zig_main_keys_key_array_111, 5},
-{zig_main_keys_key_array_112, 7},
-{zig_main_keys_key_array_113, 12},
 {0, 0},
-{zig_main_keys_key_array_115, 4},
-{zig_main_keys_key_array_116, 11},
+{cpp_main_keys_key_array_108, 11},
+{cpp_main_keys_key_array_109, 12},
+{cpp_main_keys_key_array_110, 6},
+{cpp_main_keys_key_array_111, 4},
 {0, 0},
-{zig_main_keys_key_array_118, 4},
+{cpp_main_keys_key_array_113, 4},
+{cpp_main_keys_key_array_114, 5},
+{cpp_main_keys_key_array_115, 4},
+{cpp_main_keys_key_array_116, 5},
 {0, 0},
 {0, 0},
-{0, 0},
-{zig_main_keys_key_array_122, 14},
-{zig_main_keys_key_array_123, 6},
-{zig_main_keys_key_array_124, 4},
-{0, 0},
-{0, 0},
-{zig_main_keys_key_array_127, 4},
-{zig_main_keys_key_array_128, 7},
-{0, 0},
-{zig_main_keys_key_array_130, 6},
-{zig_main_keys_key_array_131, 10},
-{0, 0},
-{0, 0},
-{0, 0},
-{0, 0},
-{zig_main_keys_key_array_136, 3},
-{zig_main_keys_key_array_137, 5},
-{zig_main_keys_key_array_138, 3},
-{0, 0},
-{zig_main_keys_key_array_140, 6},
-{0, 0},
-{0, 0},
-{0, 0},
-{zig_main_keys_key_array_144, 3},
-{0, 0},
-{zig_main_keys_key_array_146, 5},
-{0, 0},
-{zig_main_keys_key_array_148, 12},
-{zig_main_keys_key_array_149, 2},
-{zig_main_keys_key_array_150, 2},
-{0, 0},
-{zig_main_keys_key_array_152, 14},
-{zig_main_keys_key_array_153, 7},
-{zig_main_keys_key_array_154, 4},
-{zig_main_keys_key_array_155, 2},
-{0, 0},
-{0, 0},
-{0, 0},
-{0, 0},
-{zig_main_keys_key_array_160, 4},
-{zig_main_keys_key_array_161, 3},
-{0, 0},
-{0, 0},
-{0, 0},
-{0, 0},
-{0, 0},
-{zig_main_keys_key_array_167, 8},
-{zig_main_keys_key_array_168, 3},
-{zig_main_keys_key_array_169, 5},
-{zig_main_keys_key_array_170, 5},
+{cpp_main_keys_key_array_119, 8},
 {0, 0},
 };
-Lexeme_Table_Value zig_main_keys_value_array[172] = {
-{4, TokenZigKind_Export},
+Lexeme_Table_Value cpp_main_keys_value_array[121] = {
+{4, TokenCppKind_Double},
 {0, 0},
+{4, TokenCppKind_Register},
+{4, TokenCppKind_Public},
 {0, 0},
+{4, TokenCppKind_Try},
+{4, TokenCppKind_Volatile},
 {0, 0},
-{4, TokenZigKind_U32},
-{4, TokenZigKind_Usize},
-{4, TokenZigKind_NoAlias},
-{4, TokenZigKind_C_ulong},
-{4, TokenZigKind_Align},
 {0, 0},
 {0, 0},
-{4, TokenZigKind_Opaque},
-{4, TokenZigKind_Char},
+{4, TokenCppKind_Switch},
+{4, TokenCppKind_ConstCast},
 {0, 0},
 {0, 0},
 {0, 0},
-{4, TokenZigKind_AnyError},
-{4, TokenZigKind_Isize},
-{4, TokenZigKind_Struct},
 {0, 0},
-{4, TokenZigKind_C_uint},
+{4, TokenCppKind_Goto},
 {0, 0},
-{4, TokenZigKind_U8},
-{4, TokenZigKind_Resume},
-{4, TokenZigKind_I16},
-{4, TokenZigKind_Error},
-{4, TokenZigKind_Unreachable},
+{4, TokenCppKind_Int},
 {0, 0},
-{4, TokenZigKind_U16},
 {0, 0},
+{4, TokenCppKind_StaticAssert},
+{4, TokenCppKind_Struct},
+{4, TokenCppKind_Return},
+{4, TokenCppKind_Operator},
+{4, TokenCppKind_If},
 {0, 0},
+{4, TokenCppKind_Class},
 {0, 0},
 {0, 0},
 {0, 0},
 {0, 0},
-{4, TokenZigKind_AnyOpaque},
-{4, TokenZigKind_C_ushort},
 {0, 0},
+{4, TokenCppKind_Template},
+{4, TokenCppKind_Static},
 {0, 0},
-{4, TokenZigKind_Goto},
+{4, TokenCppKind_Const},
+{4, TokenCppKind_Union},
+{4, TokenCppKind_Namespace},
+{4, TokenCppKind_SizeOf},
 {0, 0},
-{4, TokenZigKind_AnyType},
-{4, TokenZigKind_Extern},
 {0, 0},
-{4, TokenZigKind_Defer},
-{4, TokenZigKind_Null},
-{4, TokenZigKind_I8},
+{4, TokenCppKind_Inline},
 {0, 0},
-{4, TokenZigKind_I64},
+{4, TokenCppKind_TypeID},
+{4, TokenCppKind_AlignAs},
+{4, TokenCppKind_NoExcept},
 {0, 0},
+{4, TokenCppKind_Float},
 {0, 0},
-{4, TokenZigKind_AllowZero},
+{4, TokenCppKind_This},
 {0, 0},
-{4, TokenZigKind_Break},
 {0, 0},
-{8, TokenZigKind_LiteralTrue},
 {0, 0},
-{4, TokenZigKind_Static},
-{4, TokenZigKind_ThreadLocal},
-{4, TokenZigKind_NoReturn},
-{4, TokenZigKind_U128},
+{4, TokenCppKind_Delete},
 {0, 0},
-{4, TokenZigKind_Packed},
-{4, TokenZigKind_C_ulonglong},
+{4, TokenCppKind_Continue},
+{4, TokenCppKind_Typename},
+{4, TokenCppKind_Virtual},
+{4, TokenCppKind_New},
 {0, 0},
+{4, TokenCppKind_Do},
+{8, TokenCppKind_LiteralFalse},
 {0, 0},
 {0, 0},
-{4, TokenZigKind_C_long},
-{4, TokenZigKind_AddrSpace},
-{4, TokenZigKind_Asm},
-{4, TokenZigKind_F80},
-{4, TokenZigKind_AnyFrame},
 {0, 0},
 {0, 0},
-{4, TokenZigKind_Bool},
-{8, TokenZigKind_LiteralFalse},
-{4, TokenZigKind_ErrDefer},
-{4, TokenZigKind_Inline},
+{4, TokenCppKind_Break},
+{4, TokenCppKind_Bool},
+{8, TokenCppKind_LiteralTrue},
+{4, TokenCppKind_Extern},
 {0, 0},
+{4, TokenCppKind_Else},
+{4, TokenCppKind_ThreadLocal},
+{4, TokenCppKind_Char},
+{4, TokenCppKind_Unsigned},
+{4, TokenCppKind_Signed},
 {0, 0},
+{4, TokenCppKind_Catch},
 {0, 0},
 {0, 0},
 {0, 0},
 {0, 0},
-{4, TokenZigKind_F64},
-{4, TokenZigKind_Pub},
-{4, TokenZigKind_Return},
-{4, TokenZigKind_UsingNamespace},
 {0, 0},
+{4, TokenCppKind_DeclType},
 {0, 0},
+{4, TokenCppKind_Private},
+{4, TokenCppKind_Long},
 {0, 0},
 {0, 0},
-{4, TokenZigKind_NoSuspend},
-{4, TokenZigKind_Try},
+{4, TokenCppKind_While},
+{4, TokenCppKind_Export},
 {0, 0},
+{4, TokenCppKind_For},
 {0, 0},
+{4, TokenCppKind_Protected},
+{4, TokenCppKind_AlignOf},
+{4, TokenCppKind_Asm},
+{4, TokenCppKind_Typedef},
 {0, 0},
-{4, TokenZigKind_Type},
-{4, TokenZigKind_NoInline},
-{4, TokenZigKind_Volatile},
 {0, 0},
+{4, TokenCppKind_Default},
+{4, TokenCppKind_NullPtr},
 {0, 0},
-{4, TokenZigKind_Catch},
-{4, TokenZigKind_Comptime},
-{4, TokenZigKind_For},
+{4, TokenCppKind_ReinterpretCast},
 {0, 0},
-{4, TokenZigKind_Const},
 {0, 0},
 {0, 0},
+{4, TokenCppKind_StaticCast},
+{4, TokenCppKind_DynamicCast},
+{4, TokenCppKind_Friend},
+{4, TokenCppKind_Case},
 {0, 0},
+{4, TokenCppKind_Void},
+{4, TokenCppKind_Short},
+{4, TokenCppKind_Enum},
+{4, TokenCppKind_Using},
 {0, 0},
-{4, TokenZigKind_Async},
-{4, TokenZigKind_AlignOf},
-{4, TokenZigKind_C_longdouble},
 {0, 0},
-{4, TokenZigKind_Enum},
-{4, TokenZigKind_LinkSection},
-{0, 0},
-{4, TokenZigKind_Void},
-{0, 0},
-{0, 0},
-{0, 0},
-{4, TokenZigKind_Comptime_float},
-{4, TokenZigKind_OrElse},
-{4, TokenZigKind_F128},
-{0, 0},
-{0, 0},
-{4, TokenZigKind_Else},
-{4, TokenZigKind_C_short},
-{0, 0},
-{4, TokenZigKind_Switch},
-{4, TokenZigKind_C_longlong},
-{0, 0},
-{0, 0},
-{0, 0},
-{0, 0},
-{4, TokenZigKind_F32},
-{4, TokenZigKind_Union},
-{4, TokenZigKind_Var},
-{0, 0},
-{4, TokenZigKind_C_char},
-{0, 0},
-{0, 0},
-{0, 0},
-{4, TokenZigKind_U64},
-{0, 0},
-{4, TokenZigKind_Await},
-{0, 0},
-{4, TokenZigKind_Comptime_int},
-{4, TokenZigKind_If},
-{4, TokenZigKind_Fn},
-{0, 0},
-{4, TokenZigKind_CallConvention},
-{4, TokenZigKind_Suspend},
-{4, TokenZigKind_Test},
-{4, TokenZigKind_Do},
-{0, 0},
-{0, 0},
-{0, 0},
-{0, 0},
-{4, TokenZigKind_I128},
-{4, TokenZigKind_F16},
-{0, 0},
-{0, 0},
-{0, 0},
-{0, 0},
-{0, 0},
-{4, TokenZigKind_Continue},
-{4, TokenZigKind_I32},
-{4, TokenZigKind_C_int},
-{4, TokenZigKind_While},
+{4, TokenCppKind_Explicit},
 {0, 0},
 };
-i32 zig_main_keys_slot_count = 172;
-u64 zig_main_keys_seed = 0x529caab346c62288;
-u64 zig_pp_directives_hash_array[26] = {
-0x6c85889cebcf26bb,0x3bddf8c1851188eb,0x0000000000000000,0x697b5c665a78b0b3,
-0x6c85889cef58a95f,0x0000000000000000,0x6c85889cebcfd94f,0x0000000000000000,
-0x3bddf8c38f3bf1df,0x0000000000000000,0x0000000000000000,0xc20c8804d0a8b75b,
-0x697b5c665a52c9db,0xf4bd57f3373eb7f7,0x0000000000000000,0x0000000000000000,
-0xf4bd57d6120ed777,0x3bddf8c1c0fcb3cd,0x0000000000000000,0x697b5c676efc2aeb,
-0x3bddf8c807b2f02b,0x0000000000000000,0x0000000000000000,0x0000000000000000,
-0x697b5c679592eddd,0x697b5c6769da52eb,
+i32 cpp_main_keys_slot_count = 121;
+u64 cpp_main_keys_seed = 0x953a12ac17c41417;
+u64 cpp_pp_directives_hash_array[25] = {
+0xfe56e8c4074028a1,0x0000000000000000,0xc3c57ac6cdcc8e13,0x0000000000000000,
+0x0000000000000000,0x1ef2b594e6639499,0x1ef2b5945965d033,0xc3c57ac6cc3200a1,
+0x0000000000000000,0xfe56e944526812e1,0xa2ead7c2d3f080b1,0x0000000000000000,
+0x1ef2b594e525cd8d,0xc3c57ac6cdcc8bf9,0x0000000000000000,0x0000000000000000,
+0xa2eaaf0527422dcd,0x0000000000000000,0x0000000000000000,0xfe56e924faa029ef,
+0x0cfa51ab021d0e39,0x0000000000000000,0x1ef2b594e5647e39,0x1ef2b594592dbd19,
+0xfe56e9455b09df59,
 };
-u8 zig_pp_directives_key_array_0[] = {0x65,0x6c,0x69,0x66,};
-u8 zig_pp_directives_key_array_1[] = {0x69,0x66,0x6e,0x64,0x65,0x66,};
-u8 zig_pp_directives_key_array_3[] = {0x65,0x72,0x72,0x6f,0x72,};
-u8 zig_pp_directives_key_array_4[] = {0x6c,0x69,0x6e,0x65,};
-u8 zig_pp_directives_key_array_6[] = {0x65,0x6c,0x73,0x65,};
-u8 zig_pp_directives_key_array_8[] = {0x64,0x65,0x66,0x69,0x6e,0x65,};
-u8 zig_pp_directives_key_array_11[] = {0x69,0x66,};
-u8 zig_pp_directives_key_array_12[] = {0x65,0x6e,0x64,0x69,0x66,};
-u8 zig_pp_directives_key_array_13[] = {0x76,0x65,0x72,0x73,0x69,0x6f,0x6e,};
-u8 zig_pp_directives_key_array_16[] = {0x69,0x6e,0x63,0x6c,0x75,0x64,0x65,};
-u8 zig_pp_directives_key_array_17[] = {0x69,0x6d,0x70,0x6f,0x72,0x74,};
-u8 zig_pp_directives_key_array_19[] = {0x69,0x66,0x64,0x65,0x66,};
-u8 zig_pp_directives_key_array_20[] = {0x70,0x72,0x61,0x67,0x6d,0x61,};
-u8 zig_pp_directives_key_array_24[] = {0x75,0x73,0x69,0x6e,0x67,};
-u8 zig_pp_directives_key_array_25[] = {0x75,0x6e,0x64,0x65,0x66,};
-String_Const_u8 zig_pp_directives_key_array[26] = {
-{zig_pp_directives_key_array_0, 4},
-{zig_pp_directives_key_array_1, 6},
+u8 cpp_pp_directives_key_array_0[] = {0x64,0x65,0x66,0x69,0x6e,0x65,};
+u8 cpp_pp_directives_key_array_2[] = {0x65,0x6c,0x73,0x65,};
+u8 cpp_pp_directives_key_array_5[] = {0x69,0x66,0x64,0x65,0x66,};
+u8 cpp_pp_directives_key_array_6[] = {0x75,0x73,0x69,0x6e,0x67,};
+u8 cpp_pp_directives_key_array_7[] = {0x6c,0x69,0x6e,0x65,};
+u8 cpp_pp_directives_key_array_9[] = {0x69,0x6d,0x70,0x6f,0x72,0x74,};
+u8 cpp_pp_directives_key_array_10[] = {0x76,0x65,0x72,0x73,0x69,0x6f,0x6e,};
+u8 cpp_pp_directives_key_array_12[] = {0x65,0x72,0x72,0x6f,0x72,};
+u8 cpp_pp_directives_key_array_13[] = {0x65,0x6c,0x69,0x66,};
+u8 cpp_pp_directives_key_array_16[] = {0x69,0x6e,0x63,0x6c,0x75,0x64,0x65,};
+u8 cpp_pp_directives_key_array_19[] = {0x70,0x72,0x61,0x67,0x6d,0x61,};
+u8 cpp_pp_directives_key_array_20[] = {0x69,0x66,};
+u8 cpp_pp_directives_key_array_22[] = {0x65,0x6e,0x64,0x69,0x66,};
+u8 cpp_pp_directives_key_array_23[] = {0x75,0x6e,0x64,0x65,0x66,};
+u8 cpp_pp_directives_key_array_24[] = {0x69,0x66,0x6e,0x64,0x65,0x66,};
+String_Const_u8 cpp_pp_directives_key_array[25] = {
+{cpp_pp_directives_key_array_0, 6},
 {0, 0},
-{zig_pp_directives_key_array_3, 5},
-{zig_pp_directives_key_array_4, 4},
-{0, 0},
-{zig_pp_directives_key_array_6, 4},
-{0, 0},
-{zig_pp_directives_key_array_8, 6},
+{cpp_pp_directives_key_array_2, 4},
 {0, 0},
 {0, 0},
-{zig_pp_directives_key_array_11, 2},
-{zig_pp_directives_key_array_12, 5},
-{zig_pp_directives_key_array_13, 7},
+{cpp_pp_directives_key_array_5, 5},
+{cpp_pp_directives_key_array_6, 5},
+{cpp_pp_directives_key_array_7, 4},
+{0, 0},
+{cpp_pp_directives_key_array_9, 6},
+{cpp_pp_directives_key_array_10, 7},
+{0, 0},
+{cpp_pp_directives_key_array_12, 5},
+{cpp_pp_directives_key_array_13, 4},
 {0, 0},
 {0, 0},
-{zig_pp_directives_key_array_16, 7},
-{zig_pp_directives_key_array_17, 6},
-{0, 0},
-{zig_pp_directives_key_array_19, 5},
-{zig_pp_directives_key_array_20, 6},
+{cpp_pp_directives_key_array_16, 7},
 {0, 0},
 {0, 0},
+{cpp_pp_directives_key_array_19, 6},
+{cpp_pp_directives_key_array_20, 2},
 {0, 0},
-{zig_pp_directives_key_array_24, 5},
-{zig_pp_directives_key_array_25, 5},
+{cpp_pp_directives_key_array_22, 5},
+{cpp_pp_directives_key_array_23, 5},
+{cpp_pp_directives_key_array_24, 6},
 };
-Lexeme_Table_Value zig_pp_directives_value_array[26] = {
-{5, TokenZigKind_PPElIf},
-{5, TokenZigKind_PPIfNDef},
+Lexeme_Table_Value cpp_pp_directives_value_array[25] = {
+{5, TokenCppKind_PPDefine},
 {0, 0},
-{5, TokenZigKind_PPError},
-{5, TokenZigKind_PPLine},
-{0, 0},
-{5, TokenZigKind_PPElse},
-{0, 0},
-{5, TokenZigKind_PPDefine},
+{5, TokenCppKind_PPElse},
 {0, 0},
 {0, 0},
-{5, TokenZigKind_PPIf},
-{5, TokenZigKind_PPEndIf},
-{5, TokenZigKind_PPVersion},
+{5, TokenCppKind_PPIfDef},
+{5, TokenCppKind_PPUsing},
+{5, TokenCppKind_PPLine},
+{0, 0},
+{5, TokenCppKind_PPImport},
+{5, TokenCppKind_PPVersion},
+{0, 0},
+{5, TokenCppKind_PPError},
+{5, TokenCppKind_PPElIf},
 {0, 0},
 {0, 0},
-{5, TokenZigKind_PPInclude},
-{5, TokenZigKind_PPImport},
-{0, 0},
-{5, TokenZigKind_PPIfDef},
-{5, TokenZigKind_PPPragma},
+{5, TokenCppKind_PPInclude},
 {0, 0},
 {0, 0},
+{5, TokenCppKind_PPPragma},
+{5, TokenCppKind_PPIf},
 {0, 0},
-{5, TokenZigKind_PPUsing},
-{5, TokenZigKind_PPUndef},
+{5, TokenCppKind_PPEndIf},
+{5, TokenCppKind_PPUndef},
+{5, TokenCppKind_PPIfNDef},
 };
-i32 zig_pp_directives_slot_count = 26;
-u64 zig_pp_directives_seed = 0x033858d057966109;
-u64 zig_pp_keys_hash_array[2] = {
-0x0000000000000000,0xe349bc6c563ace2d,
+i32 cpp_pp_directives_slot_count = 25;
+u64 cpp_pp_directives_seed = 0xbeb48380ba8b083c;
+u64 cpp_pp_keys_hash_array[2] = {
+0x1ed4e97587163439,0x0000000000000000,
 };
-u8 zig_pp_keys_key_array_1[] = {0x64,0x65,0x66,0x69,0x6e,0x65,0x64,};
-String_Const_u8 zig_pp_keys_key_array[2] = {
+u8 cpp_pp_keys_key_array_0[] = {0x64,0x65,0x66,0x69,0x6e,0x65,0x64,};
+String_Const_u8 cpp_pp_keys_key_array[2] = {
+{cpp_pp_keys_key_array_0, 7},
 {0, 0},
-{zig_pp_keys_key_array_1, 7},
 };
-Lexeme_Table_Value zig_pp_keys_value_array[2] = {
+Lexeme_Table_Value cpp_pp_keys_value_array[2] = {
+{4, TokenCppKind_PPDefined},
 {0, 0},
-{4, TokenZigKind_PPDefined},
 };
-i32 zig_pp_keys_slot_count = 2;
-u64 zig_pp_keys_seed = 0xe9fdccd5d6c87a5d;
-struct Lex_State_Zig{
+i32 cpp_pp_keys_slot_count = 2;
+u64 cpp_pp_keys_seed = 0x93cbef5c9f9a0846;
+struct Lex_State_Cpp{
 u32 flags_ZF0;
 u32 flags_KF0;
 u16 flags_KB0;
@@ -636,7 +496,7 @@ u8 *ptr;
 u8 *opl_ptr;
 };
 internal void
-lex_full_input_zig_init(Lex_State_Zig *state_ptr, String_Const_u8 input){
+lex_full_input_cpp_init(Lex_State_Cpp *state_ptr, String_Const_u8 input){
 state_ptr->flags_ZF0 = 0;
 state_ptr->flags_KF0 = 0;
 state_ptr->flags_KB0 = 0;
@@ -648,10 +508,10 @@ state_ptr->ptr = input.str;
 state_ptr->opl_ptr = input.str + input.size;
 }
 internal b32
-lex_full_input_zig_breaks(Arena *arena, Token_List *list, Lex_State_Zig *state_ptr, u64 max){
+lex_full_input_cpp_breaks(Arena *arena, Token_List *list, Lex_State_Cpp *state_ptr, u64 max){
 b32 result = false;
 u64 emit_counter = 0;
-Lex_State_Zig state;
+Lex_State_Cpp state;
 block_copy_struct(&state, state_ptr);
 {
 state_label_1: // root
@@ -663,7 +523,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_EOF;
+token.sub_kind = TokenCppKind_EOF;
 token.kind = 0;
 }while(0);
 token_list_push(arena, list, &token);
@@ -689,7 +549,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -772,7 +632,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_ParenOp;
+token.sub_kind = TokenCppKind_ParenOp;
 token.kind = 13;
 }while(0);
 token_list_push(arena, list, &token);
@@ -794,7 +654,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_ParenCl;
+token.sub_kind = TokenCppKind_ParenCl;
 token.kind = 14;
 }while(0);
 token_list_push(arena, list, &token);
@@ -826,7 +686,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Comma;
+token.sub_kind = TokenCppKind_Comma;
 token.kind = 15;
 }while(0);
 token_list_push(arena, list, &token);
@@ -879,7 +739,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Semicolon;
+token.sub_kind = TokenCppKind_Semicolon;
 token.kind = 15;
 }while(0);
 token_list_push(arena, list, &token);
@@ -920,7 +780,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Ternary;
+token.sub_kind = TokenCppKind_Ternary;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -959,7 +819,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_BrackOp;
+token.sub_kind = TokenCppKind_BrackOp;
 token.kind = 13;
 }while(0);
 token_list_push(arena, list, &token);
@@ -986,7 +846,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_BrackCl;
+token.sub_kind = TokenCppKind_BrackCl;
 token.kind = 14;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1008,7 +868,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Xor;
+token.sub_kind = TokenCppKind_Xor;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1036,7 +896,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_BraceOp;
+token.sub_kind = TokenCppKind_BraceOp;
 token.kind = 11;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1063,7 +923,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_BraceCl;
+token.sub_kind = TokenCppKind_BraceCl;
 token.kind = 12;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1085,7 +945,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Tilde;
+token.sub_kind = TokenCppKind_Tilde;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1111,20 +971,20 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_KB0, 0x1)){
-Lexeme_Table_Lookup lookup = lexeme_table_lookup(zig_pp_keys_hash_array, zig_pp_keys_key_array, zig_pp_keys_value_array, zig_pp_keys_slot_count, zig_pp_keys_seed, state.emit_ptr, token.size);
+Lexeme_Table_Lookup lookup = lexeme_table_lookup(cpp_pp_keys_hash_array, cpp_pp_keys_key_array, cpp_pp_keys_value_array, cpp_pp_keys_slot_count, cpp_pp_keys_seed, state.emit_ptr, token.size);
 if (lookup.found_match){
 token.kind = lookup.base_kind;
 token.sub_kind = lookup.sub_kind;
 break;
 }
 }
-Lexeme_Table_Lookup lookup = lexeme_table_lookup(zig_main_keys_hash_array, zig_main_keys_key_array, zig_main_keys_value_array, zig_main_keys_slot_count, zig_main_keys_seed, state.emit_ptr, token.size);
+Lexeme_Table_Lookup lookup = lexeme_table_lookup(cpp_main_keys_hash_array, cpp_main_keys_key_array, cpp_main_keys_value_array, cpp_main_keys_slot_count, cpp_main_keys_seed, state.emit_ptr, token.size);
 if (lookup.found_match){
 token.kind = lookup.base_kind;
 token.sub_kind = lookup.sub_kind;
 break;
 }
-token.sub_kind = TokenZigKind_Identifier;
+token.sub_kind = TokenCppKind_Identifier;
 token.kind = 6;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1154,20 +1014,20 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_KB0, 0x1)){
-Lexeme_Table_Lookup lookup = lexeme_table_lookup(zig_pp_keys_hash_array, zig_pp_keys_key_array, zig_pp_keys_value_array, zig_pp_keys_slot_count, zig_pp_keys_seed, state.emit_ptr, token.size);
+Lexeme_Table_Lookup lookup = lexeme_table_lookup(cpp_pp_keys_hash_array, cpp_pp_keys_key_array, cpp_pp_keys_value_array, cpp_pp_keys_slot_count, cpp_pp_keys_seed, state.emit_ptr, token.size);
 if (lookup.found_match){
 token.kind = lookup.base_kind;
 token.sub_kind = lookup.sub_kind;
 break;
 }
 }
-Lexeme_Table_Lookup lookup = lexeme_table_lookup(zig_main_keys_hash_array, zig_main_keys_key_array, zig_main_keys_value_array, zig_main_keys_slot_count, zig_main_keys_seed, state.emit_ptr, token.size);
+Lexeme_Table_Lookup lookup = lexeme_table_lookup(cpp_main_keys_hash_array, cpp_main_keys_key_array, cpp_main_keys_value_array, cpp_main_keys_slot_count, cpp_main_keys_seed, state.emit_ptr, token.size);
 if (lookup.found_match){
 token.kind = lookup.base_kind;
 token.sub_kind = lookup.sub_kind;
 break;
 }
-token.sub_kind = TokenZigKind_Identifier;
+token.sub_kind = TokenCppKind_Identifier;
 token.kind = 6;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1197,7 +1057,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Whitespace;
+token.sub_kind = TokenCppKind_Whitespace;
 token.kind = 1;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1217,7 +1077,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Whitespace;
+token.sub_kind = TokenCppKind_Whitespace;
 token.kind = 1;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1255,7 +1115,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_PPErrorMessage;
+token.sub_kind = TokenCppKind_PPErrorMessage;
 token.kind = 10;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1280,7 +1140,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_PPErrorMessage;
+token.sub_kind = TokenCppKind_PPErrorMessage;
 token.kind = 10;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1305,7 +1165,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Backslash;
+token.sub_kind = TokenCppKind_Backslash;
 token.kind = 1;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1325,7 +1185,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Backslash;
+token.sub_kind = TokenCppKind_Backslash;
 token.kind = 1;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1347,7 +1207,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Backslash;
+token.sub_kind = TokenCppKind_Backslash;
 token.kind = 1;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1377,7 +1237,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Dot;
+token.sub_kind = TokenCppKind_Dot;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1397,7 +1257,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Dot;
+token.sub_kind = TokenCppKind_Dot;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1419,7 +1279,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_DotStar;
+token.sub_kind = TokenCppKind_DotStar;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1455,7 +1315,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Div;
+token.sub_kind = TokenCppKind_Div;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1475,7 +1335,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Div;
+token.sub_kind = TokenCppKind_Div;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1507,7 +1367,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_DivEq;
+token.sub_kind = TokenCppKind_DivEq;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1532,7 +1392,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralInteger;
+token.sub_kind = TokenCppKind_LiteralInteger;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1552,7 +1412,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralInteger;
+token.sub_kind = TokenCppKind_LiteralInteger;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1608,7 +1468,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralInteger;
+token.sub_kind = TokenCppKind_LiteralInteger;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1628,7 +1488,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralInteger;
+token.sub_kind = TokenCppKind_LiteralInteger;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1691,7 +1551,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat64;
+token.sub_kind = TokenCppKind_LiteralFloat64;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1711,7 +1571,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat64;
+token.sub_kind = TokenCppKind_LiteralFloat64;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1744,7 +1604,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat32;
+token.sub_kind = TokenCppKind_LiteralFloat32;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1766,7 +1626,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat64;
+token.sub_kind = TokenCppKind_LiteralFloat64;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1791,7 +1651,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat64;
+token.sub_kind = TokenCppKind_LiteralFloat64;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1811,7 +1671,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat64;
+token.sub_kind = TokenCppKind_LiteralFloat64;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1844,7 +1704,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat32;
+token.sub_kind = TokenCppKind_LiteralFloat32;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1866,7 +1726,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat64;
+token.sub_kind = TokenCppKind_LiteralFloat64;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1891,7 +1751,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat64;
+token.sub_kind = TokenCppKind_LiteralFloat64;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1911,7 +1771,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat64;
+token.sub_kind = TokenCppKind_LiteralFloat64;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1939,7 +1799,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat32;
+token.sub_kind = TokenCppKind_LiteralFloat32;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1961,7 +1821,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat64;
+token.sub_kind = TokenCppKind_LiteralFloat64;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -1986,7 +1846,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat64;
+token.sub_kind = TokenCppKind_LiteralFloat64;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2006,7 +1866,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat64;
+token.sub_kind = TokenCppKind_LiteralFloat64;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2034,7 +1894,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat32;
+token.sub_kind = TokenCppKind_LiteralFloat32;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2056,7 +1916,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralFloat64;
+token.sub_kind = TokenCppKind_LiteralFloat64;
 token.kind = 9;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2081,7 +1941,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2101,7 +1961,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2134,7 +1994,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralIntegerHex;
+token.sub_kind = TokenCppKind_LiteralIntegerHex;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2154,7 +2014,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralIntegerHex;
+token.sub_kind = TokenCppKind_LiteralIntegerHex;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2202,7 +2062,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralIntegerOct;
+token.sub_kind = TokenCppKind_LiteralIntegerOct;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2222,7 +2082,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LiteralIntegerOct;
+token.sub_kind = TokenCppKind_LiteralIntegerOct;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2270,16 +2130,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexU;
+token.sub_kind = TokenCppKind_LiteralIntegerHexU;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctU;
+token.sub_kind = TokenCppKind_LiteralIntegerOctU;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerU;
+token.sub_kind = TokenCppKind_LiteralIntegerU;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2300,16 +2160,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexU;
+token.sub_kind = TokenCppKind_LiteralIntegerHexU;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctU;
+token.sub_kind = TokenCppKind_LiteralIntegerOctU;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerU;
+token.sub_kind = TokenCppKind_LiteralIntegerU;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2345,16 +2205,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexL;
+token.sub_kind = TokenCppKind_LiteralIntegerHexL;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctL;
+token.sub_kind = TokenCppKind_LiteralIntegerOctL;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerL;
+token.sub_kind = TokenCppKind_LiteralIntegerL;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2375,16 +2235,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexL;
+token.sub_kind = TokenCppKind_LiteralIntegerHexL;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctL;
+token.sub_kind = TokenCppKind_LiteralIntegerOctL;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerL;
+token.sub_kind = TokenCppKind_LiteralIntegerL;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2412,16 +2272,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexUL;
+token.sub_kind = TokenCppKind_LiteralIntegerHexUL;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctUL;
+token.sub_kind = TokenCppKind_LiteralIntegerOctUL;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerUL;
+token.sub_kind = TokenCppKind_LiteralIntegerUL;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2447,16 +2307,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexUL;
+token.sub_kind = TokenCppKind_LiteralIntegerHexUL;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctUL;
+token.sub_kind = TokenCppKind_LiteralIntegerOctUL;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerUL;
+token.sub_kind = TokenCppKind_LiteralIntegerUL;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2477,16 +2337,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexUL;
+token.sub_kind = TokenCppKind_LiteralIntegerHexUL;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctUL;
+token.sub_kind = TokenCppKind_LiteralIntegerOctUL;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerUL;
+token.sub_kind = TokenCppKind_LiteralIntegerUL;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2509,16 +2369,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexULL;
+token.sub_kind = TokenCppKind_LiteralIntegerHexULL;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctULL;
+token.sub_kind = TokenCppKind_LiteralIntegerOctULL;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerULL;
+token.sub_kind = TokenCppKind_LiteralIntegerULL;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2544,16 +2404,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexL;
+token.sub_kind = TokenCppKind_LiteralIntegerHexL;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctL;
+token.sub_kind = TokenCppKind_LiteralIntegerOctL;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerL;
+token.sub_kind = TokenCppKind_LiteralIntegerL;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2574,16 +2434,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexL;
+token.sub_kind = TokenCppKind_LiteralIntegerHexL;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctL;
+token.sub_kind = TokenCppKind_LiteralIntegerOctL;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerL;
+token.sub_kind = TokenCppKind_LiteralIntegerL;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2606,16 +2466,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexUL;
+token.sub_kind = TokenCppKind_LiteralIntegerHexUL;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctUL;
+token.sub_kind = TokenCppKind_LiteralIntegerOctUL;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerUL;
+token.sub_kind = TokenCppKind_LiteralIntegerUL;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2646,16 +2506,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexUL;
+token.sub_kind = TokenCppKind_LiteralIntegerHexUL;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctUL;
+token.sub_kind = TokenCppKind_LiteralIntegerOctUL;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerUL;
+token.sub_kind = TokenCppKind_LiteralIntegerUL;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2676,16 +2536,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexUL;
+token.sub_kind = TokenCppKind_LiteralIntegerHexUL;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctUL;
+token.sub_kind = TokenCppKind_LiteralIntegerOctUL;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerUL;
+token.sub_kind = TokenCppKind_LiteralIntegerUL;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2708,16 +2568,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexULL;
+token.sub_kind = TokenCppKind_LiteralIntegerHexULL;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctULL;
+token.sub_kind = TokenCppKind_LiteralIntegerOctULL;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerULL;
+token.sub_kind = TokenCppKind_LiteralIntegerULL;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2743,16 +2603,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexLL;
+token.sub_kind = TokenCppKind_LiteralIntegerHexLL;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctLL;
+token.sub_kind = TokenCppKind_LiteralIntegerOctLL;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerLL;
+token.sub_kind = TokenCppKind_LiteralIntegerLL;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2773,16 +2633,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexLL;
+token.sub_kind = TokenCppKind_LiteralIntegerHexLL;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctLL;
+token.sub_kind = TokenCppKind_LiteralIntegerOctLL;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerLL;
+token.sub_kind = TokenCppKind_LiteralIntegerLL;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2805,16 +2665,16 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x1)){
-token.sub_kind = TokenZigKind_LiteralIntegerHexULL;
+token.sub_kind = TokenCppKind_LiteralIntegerHexULL;
 token.kind = 8;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x2)){
-token.sub_kind = TokenZigKind_LiteralIntegerOctULL;
+token.sub_kind = TokenCppKind_LiteralIntegerOctULL;
 token.kind = 8;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralIntegerULL;
+token.sub_kind = TokenCppKind_LiteralIntegerULL;
 token.kind = 8;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2839,7 +2699,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2859,7 +2719,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -2905,21 +2765,21 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-Lexeme_Table_Lookup lookup = lexeme_table_lookup(zig_pp_directives_hash_array, zig_pp_directives_key_array, zig_pp_directives_value_array, zig_pp_directives_slot_count, zig_pp_directives_seed, state.delim_first, (state.delim_one_past_last - state.delim_first));
+Lexeme_Table_Lookup lookup = lexeme_table_lookup(cpp_pp_directives_hash_array, cpp_pp_directives_key_array, cpp_pp_directives_value_array, cpp_pp_directives_slot_count, cpp_pp_directives_seed, state.delim_first, (state.delim_one_past_last - state.delim_first));
 if (lookup.found_match){
 token.kind = lookup.base_kind;
 token.sub_kind = lookup.sub_kind;
 break;
 }
-token.sub_kind = TokenZigKind_PPUnknown;
+token.sub_kind = TokenCppKind_PPUnknown;
 token.kind = 2;
 }while(0);
 switch (token.sub_kind){
-case TokenZigKind_PPInclude:
+case TokenCppKind_PPInclude:
 {
 state.flags_KF0 |= 0x1;
 }break;
-case TokenZigKind_PPError:
+case TokenCppKind_PPError:
 {
 state.flags_KF0 |= 0x2;
 }break;
@@ -2942,21 +2802,21 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-Lexeme_Table_Lookup lookup = lexeme_table_lookup(zig_pp_directives_hash_array, zig_pp_directives_key_array, zig_pp_directives_value_array, zig_pp_directives_slot_count, zig_pp_directives_seed, state.delim_first, (state.delim_one_past_last - state.delim_first));
+Lexeme_Table_Lookup lookup = lexeme_table_lookup(cpp_pp_directives_hash_array, cpp_pp_directives_key_array, cpp_pp_directives_value_array, cpp_pp_directives_slot_count, cpp_pp_directives_seed, state.delim_first, (state.delim_one_past_last - state.delim_first));
 if (lookup.found_match){
 token.kind = lookup.base_kind;
 token.sub_kind = lookup.sub_kind;
 break;
 }
-token.sub_kind = TokenZigKind_PPUnknown;
+token.sub_kind = TokenCppKind_PPUnknown;
 token.kind = 2;
 }while(0);
 switch (token.sub_kind){
-case TokenZigKind_PPInclude:
+case TokenCppKind_PPInclude:
 {
 state.flags_KF0 |= 0x1;
 }break;
-case TokenZigKind_PPError:
+case TokenCppKind_PPError:
 {
 state.flags_KF0 |= 0x2;
 }break;
@@ -2996,7 +2856,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3016,7 +2876,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3055,7 +2915,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_PPIncludeFile;
+token.sub_kind = TokenCppKind_PPIncludeFile;
 token.kind = 10;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3080,7 +2940,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3100,7 +2960,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3140,7 +3000,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_PPIncludeFile;
+token.sub_kind = TokenCppKind_PPIncludeFile;
 token.kind = 10;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3287,7 +3147,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3312,7 +3172,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3336,26 +3196,26 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x4)){
-token.sub_kind = TokenZigKind_LiteralStringWide;
+token.sub_kind = TokenCppKind_LiteralStringWide;
 token.kind = 10;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x8)){
-token.sub_kind = TokenZigKind_LiteralStringUTF8;
+token.sub_kind = TokenCppKind_LiteralStringUTF8;
 token.kind = 10;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x10)){
-token.sub_kind = TokenZigKind_LiteralStringUTF16;
+token.sub_kind = TokenCppKind_LiteralStringUTF16;
 token.kind = 10;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x20)){
-token.sub_kind = TokenZigKind_LiteralStringUTF32;
+token.sub_kind = TokenCppKind_LiteralStringUTF32;
 token.kind = 10;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralString;
+token.sub_kind = TokenCppKind_LiteralString;
 token.kind = 10;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3382,26 +3242,26 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x4)){
-token.sub_kind = TokenZigKind_LiteralCharacterWide;
+token.sub_kind = TokenCppKind_LiteralCharacterWide;
 token.kind = 10;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x8)){
-token.sub_kind = TokenZigKind_LiteralCharacterUTF8;
+token.sub_kind = TokenCppKind_LiteralCharacterUTF8;
 token.kind = 10;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x10)){
-token.sub_kind = TokenZigKind_LiteralCharacterUTF16;
+token.sub_kind = TokenCppKind_LiteralCharacterUTF16;
 token.kind = 10;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x20)){
-token.sub_kind = TokenZigKind_LiteralCharacterUTF32;
+token.sub_kind = TokenCppKind_LiteralCharacterUTF32;
 token.kind = 10;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralCharacter;
+token.sub_kind = TokenCppKind_LiteralCharacter;
 token.kind = 10;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3434,7 +3294,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3448,7 +3308,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_EOF;
+token.sub_kind = TokenCppKind_EOF;
 token.kind = 0;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3737,7 +3597,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3751,7 +3611,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_EOF;
+token.sub_kind = TokenCppKind_EOF;
 token.kind = 0;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3778,7 +3638,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3809,7 +3669,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3823,7 +3683,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_EOF;
+token.sub_kind = TokenCppKind_EOF;
 token.kind = 0;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3890,26 +3750,26 @@ token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
 if (HasFlag(state.flags_ZF0, 0x4)){
-token.sub_kind = TokenZigKind_LiteralStringWideRaw;
+token.sub_kind = TokenCppKind_LiteralStringWideRaw;
 token.kind = 10;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x8)){
-token.sub_kind = TokenZigKind_LiteralStringUTF8Raw;
+token.sub_kind = TokenCppKind_LiteralStringUTF8Raw;
 token.kind = 10;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x10)){
-token.sub_kind = TokenZigKind_LiteralStringUTF16Raw;
+token.sub_kind = TokenCppKind_LiteralStringUTF16Raw;
 token.kind = 10;
 break;
 }
 if (HasFlag(state.flags_ZF0, 0x20)){
-token.sub_kind = TokenZigKind_LiteralStringUTF32Raw;
+token.sub_kind = TokenCppKind_LiteralStringUTF32Raw;
 token.kind = 10;
 break;
 }
-token.sub_kind = TokenZigKind_LiteralStringRaw;
+token.sub_kind = TokenCppKind_LiteralStringRaw;
 token.kind = 10;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3934,7 +3794,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_BlockComment;
+token.sub_kind = TokenCppKind_BlockComment;
 token.kind = 3;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3948,7 +3808,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_EOF;
+token.sub_kind = TokenCppKind_EOF;
 token.kind = 0;
 }while(0);
 token_list_push(arena, list, &token);
@@ -3990,7 +3850,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_BlockComment;
+token.sub_kind = TokenCppKind_BlockComment;
 token.kind = 3;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4004,7 +3864,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_EOF;
+token.sub_kind = TokenCppKind_EOF;
 token.kind = 0;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4036,7 +3896,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_BlockComment;
+token.sub_kind = TokenCppKind_BlockComment;
 token.kind = 3;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4061,7 +3921,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LineComment;
+token.sub_kind = TokenCppKind_LineComment;
 token.kind = 3;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4086,7 +3946,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LineComment;
+token.sub_kind = TokenCppKind_LineComment;
 token.kind = 3;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4137,7 +3997,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Colon;
+token.sub_kind = TokenCppKind_Colon;
 token.kind = 15;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4157,7 +4017,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Colon;
+token.sub_kind = TokenCppKind_Colon;
 token.kind = 15;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4179,7 +4039,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_ColonColon;
+token.sub_kind = TokenCppKind_ColonColon;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4204,7 +4064,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Plus;
+token.sub_kind = TokenCppKind_Plus;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4224,7 +4084,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Plus;
+token.sub_kind = TokenCppKind_Plus;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4246,7 +4106,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_PlusPlus;
+token.sub_kind = TokenCppKind_PlusPlus;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4268,7 +4128,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_PlusEq;
+token.sub_kind = TokenCppKind_PlusEq;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4293,7 +4153,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Minus;
+token.sub_kind = TokenCppKind_Minus;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4313,7 +4173,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Minus;
+token.sub_kind = TokenCppKind_Minus;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4335,7 +4195,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_MinusMinus;
+token.sub_kind = TokenCppKind_MinusMinus;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4357,7 +4217,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_MinusEq;
+token.sub_kind = TokenCppKind_MinusEq;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4387,7 +4247,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Arrow;
+token.sub_kind = TokenCppKind_Arrow;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4407,7 +4267,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Arrow;
+token.sub_kind = TokenCppKind_Arrow;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4429,7 +4289,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_ArrowStar;
+token.sub_kind = TokenCppKind_ArrowStar;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4454,7 +4314,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Less;
+token.sub_kind = TokenCppKind_Less;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4474,7 +4334,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Less;
+token.sub_kind = TokenCppKind_Less;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4509,7 +4369,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Grtr;
+token.sub_kind = TokenCppKind_Grtr;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4529,7 +4389,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Grtr;
+token.sub_kind = TokenCppKind_Grtr;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4551,7 +4411,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_GrtrEq;
+token.sub_kind = TokenCppKind_GrtrEq;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4581,7 +4441,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LessEq;
+token.sub_kind = TokenCppKind_LessEq;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4601,7 +4461,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LessEq;
+token.sub_kind = TokenCppKind_LessEq;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4623,7 +4483,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Compare;
+token.sub_kind = TokenCppKind_Compare;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4648,7 +4508,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Eq;
+token.sub_kind = TokenCppKind_Eq;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4668,7 +4528,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Eq;
+token.sub_kind = TokenCppKind_Eq;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4690,7 +4550,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_EqEq;
+token.sub_kind = TokenCppKind_EqEq;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4715,7 +4575,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Not;
+token.sub_kind = TokenCppKind_Not;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4735,7 +4595,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Not;
+token.sub_kind = TokenCppKind_Not;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4757,7 +4617,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_NotEq;
+token.sub_kind = TokenCppKind_NotEq;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4782,7 +4642,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_And;
+token.sub_kind = TokenCppKind_And;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4802,7 +4662,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_And;
+token.sub_kind = TokenCppKind_And;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4824,7 +4684,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_AndAnd;
+token.sub_kind = TokenCppKind_AndAnd;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4849,7 +4709,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Or;
+token.sub_kind = TokenCppKind_Or;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4869,7 +4729,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Or;
+token.sub_kind = TokenCppKind_Or;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4891,7 +4751,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_OrOr;
+token.sub_kind = TokenCppKind_OrOr;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4916,7 +4776,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Star;
+token.sub_kind = TokenCppKind_Star;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4936,7 +4796,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Star;
+token.sub_kind = TokenCppKind_Star;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4958,7 +4818,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_StarEq;
+token.sub_kind = TokenCppKind_StarEq;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -4983,7 +4843,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Mod;
+token.sub_kind = TokenCppKind_Mod;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -5003,7 +4863,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_Mod;
+token.sub_kind = TokenCppKind_Mod;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -5025,7 +4885,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_ModEq;
+token.sub_kind = TokenCppKind_ModEq;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -5050,7 +4910,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LeftLeft;
+token.sub_kind = TokenCppKind_LeftLeft;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -5070,7 +4930,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LeftLeft;
+token.sub_kind = TokenCppKind_LeftLeft;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -5092,7 +4952,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LeftLeftEq;
+token.sub_kind = TokenCppKind_LeftLeftEq;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -5117,7 +4977,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_RightRight;
+token.sub_kind = TokenCppKind_RightRight;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -5137,7 +4997,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_RightRight;
+token.sub_kind = TokenCppKind_RightRight;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -5159,7 +5019,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_RightRightEq;
+token.sub_kind = TokenCppKind_RightRightEq;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -5184,7 +5044,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_PPStringify;
+token.sub_kind = TokenCppKind_PPStringify;
 token.kind = 15;
 }while(0);
 token_list_push(arena, list, &token);
@@ -5204,7 +5064,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_PPStringify;
+token.sub_kind = TokenCppKind_PPStringify;
 token.kind = 15;
 }while(0);
 token_list_push(arena, list, &token);
@@ -5226,7 +5086,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_PPConcat;
+token.sub_kind = TokenCppKind_PPConcat;
 token.kind = 15;
 }while(0);
 token_list_push(arena, list, &token);
@@ -5251,7 +5111,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -5271,7 +5131,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_LexError;
+token.sub_kind = TokenCppKind_LexError;
 token.kind = 2;
 }while(0);
 token_list_push(arena, list, &token);
@@ -5293,7 +5153,7 @@ token.pos = (i64)(state.emit_ptr - state.base);
 token.size = (i64)(state.ptr - state.emit_ptr);
 token.flags = state.flags_KB0;
 do{
-token.sub_kind = TokenZigKind_DotDotDot;
+token.sub_kind = TokenCppKind_DotDotDot;
 token.kind = 7;
 }while(0);
 token_list_push(arena, list, &token);
@@ -5313,10 +5173,10 @@ block_copy_struct(state_ptr, &state);
 return(result);
 }
 internal Token_List
-lex_full_input_zig(Arena *arena, String_Const_u8 input){
-Lex_State_Zig state = {};
-lex_full_input_zig_init(&state, input);
+lex_full_input_cpp(Arena *arena, String_Const_u8 input){
+Lex_State_Cpp state = {};
+lex_full_input_cpp_init(&state, input);
 Token_List list = {};
-lex_full_input_zig_breaks(arena, &list, &state, max_u64);
+lex_full_input_cpp_breaks(arena, &list, &state, max_u64);
 return(list);
 }

@@ -17,11 +17,11 @@ F4_CPP_SkipParseBody(F4_Index_ParseCtx *ctx)
 {
     b32 body_found = 0;
     int nest = 0;
-    
+
     for(;!ctx->done;)
     {
         Token *name = 0;
-        
+
         if(F4_Index_ParsePattern(ctx, "%k", TokenBaseKind_Comment, &name))
         {
             F4_Index_ParseComment(ctx, name);
@@ -83,7 +83,7 @@ F4_CPP_ParseStructOrUnionBodyIFuckingHateCPlusPlus(F4_Index_ParseCtx *ctx, F4_In
     Token *name = 0;
     b32 valid = 0;
     b32 need_end_name = 0;
-    
+
     if(F4_Index_ParsePattern(ctx, "%k", TokenBaseKind_Identifier, &name))
     {
         valid = 1;
@@ -92,7 +92,7 @@ F4_CPP_ParseStructOrUnionBodyIFuckingHateCPlusPlus(F4_Index_ParseCtx *ctx, F4_In
     {
         need_end_name = 1;
     }
-    
+
     if(F4_CPP_SkipParseBody(ctx))
     {
     }
@@ -100,7 +100,7 @@ F4_CPP_ParseStructOrUnionBodyIFuckingHateCPlusPlus(F4_Index_ParseCtx *ctx, F4_In
     {
         note_flags |= F4_Index_NoteFlag_Prototype;
     }
-    
+
     if(need_end_name)
     {
         if(F4_Index_ParsePattern(ctx, "%k", TokenBaseKind_Identifier, &name))
@@ -108,7 +108,7 @@ F4_CPP_ParseStructOrUnionBodyIFuckingHateCPlusPlus(F4_Index_ParseCtx *ctx, F4_In
             valid = 1;
         }
     }
-    
+
     if(valid)
     {
         F4_Index_MakeNote(ctx, Ii64(name), F4_Index_NoteKind_Type, note_flags);
@@ -120,7 +120,7 @@ F4_CPP_ParseFunctionBodyIFuckingHateCPlusPlus(F4_Index_ParseCtx *ctx, b32 *proto
 {
     b32 valid = 0;
     b32 prototype = 0;
-    
+
     for(;!ctx->done;)
     {
         Token *token = token_it_read(&ctx->it);
@@ -141,7 +141,7 @@ F4_CPP_ParseFunctionBodyIFuckingHateCPlusPlus(F4_Index_ParseCtx *ctx, b32 *proto
         }
         F4_Index_ParseCtx_Inc(ctx, 0);
     }
-    
+
     if(valid)
     {
         if(prototype == 0)
@@ -149,9 +149,9 @@ F4_CPP_ParseFunctionBodyIFuckingHateCPlusPlus(F4_Index_ParseCtx *ctx, b32 *proto
             F4_CPP_SkipParseBody(ctx);
         }
     }
-    
+
     *prototype_ptr = prototype;
-    
+
     return valid;
 }
 
@@ -170,7 +170,7 @@ F4_CPP_ParseEnumBodyIFuckingHateCPlusPlus(F4_Index_ParseCtx *ctx)
             else if(F4_Index_ParsePattern(ctx, "%k%t", TokenBaseKind_Identifier, &constant, "="))
             {
                 F4_Index_MakeNote(ctx, Ii64(constant), F4_Index_NoteKind_Constant, 0);
-                
+
                 for(;!ctx->done;)
                 {
                     Token *token = token_it_read(&ctx->it);
@@ -209,14 +209,14 @@ internal F4_LANGUAGE_INDEXFILE(F4_CPP_IndexFile)
     for(b32 handled = 0; !ctx->done;)
     {
         handled = 0;
-        
+
         Token *name = 0;
         Token *base_type = 0;
         F4_Index_Note *containing_struct = 0;
         F4_Index_Note *note = 0;
-        
+
         if(0){}
-        
+
         //~ NOTE(rjf): Extern "C" scope changes (ignore) ((dude C++ syntax is so fucked up))
         // NOTE(rjf): CORRECTION: Text files in general are so fucked up, fuck all of this
         // parsing bullshit
@@ -224,7 +224,7 @@ internal F4_LANGUAGE_INDEXFILE(F4_CPP_IndexFile)
         {
             handled = 1;
         }
-        
+
         //~ NOTE(rjf): Scope Nest Changes
         else if(F4_Index_ParsePattern(ctx, "%t", "{"))
         {
@@ -240,7 +240,7 @@ internal F4_LANGUAGE_INDEXFILE(F4_CPP_IndexFile)
                 scope_nest = 0;
             }
         }
-        
+
         //~ NOTE(rjf): Structs
         else if(F4_Index_ParsePattern(ctx, "%t", "struct"))
         {
@@ -256,7 +256,7 @@ internal F4_LANGUAGE_INDEXFILE(F4_CPP_IndexFile)
                 F4_Index_MakeNote(ctx, Ii64(name), F4_Index_NoteKind_Type, F4_Index_NoteFlag_ProductType);
             }
         }
-        
+
         //~ NOTE(rjf): Unions
         else if(F4_Index_ParsePattern(ctx, "%t", "union"))
         {
@@ -272,7 +272,7 @@ internal F4_LANGUAGE_INDEXFILE(F4_CPP_IndexFile)
                 F4_Index_MakeNote(ctx, Ii64(name), F4_Index_NoteKind_Type, F4_Index_NoteFlag_SumType);
             }
         }
-        
+
         //~ NOTE(rjf): Typedef'd Enums
         else if(F4_Index_ParsePattern(ctx, "%t%t%k", "typedef", "enum", TokenBaseKind_Identifier, &name) ||
                 F4_Index_ParsePattern(ctx, "%t%t", "typedef", "enum"))
@@ -298,7 +298,7 @@ internal F4_LANGUAGE_INDEXFILE(F4_CPP_IndexFile)
                 F4_Index_MakeNote(ctx, Ii64(name), F4_Index_NoteKind_Type, prototype ? F4_Index_NoteFlag_Prototype : 0);
             }
         }
-        
+
         //~ NOTE(rjf): Enums
         else if(F4_Index_ParsePattern(ctx, "%t%k", "enum", TokenBaseKind_Identifier, &name) ||
                 F4_Index_ParsePattern(ctx, "%t", "enum"))
@@ -318,7 +318,7 @@ internal F4_LANGUAGE_INDEXFILE(F4_CPP_IndexFile)
                 F4_Index_MakeNote(ctx, Ii64(name), F4_Index_NoteKind_Type, prototype ? F4_Index_NoteFlag_Prototype : 0);
             }
         }
-        
+
         //~ NOTE(rjf): Pure Typedefs
         else if(F4_Index_ParsePattern(ctx, "%t", "typedef"))
         {
@@ -349,7 +349,7 @@ internal F4_LANGUAGE_INDEXFILE(F4_CPP_IndexFile)
                 {
                     break;
                 }
-                else 
+                else
                 {
                     F4_Index_ParseCtx_Inc(ctx, 0);
                 }
@@ -364,7 +364,7 @@ internal F4_LANGUAGE_INDEXFILE(F4_CPP_IndexFile)
                 F4_Index_MakeNote(ctx, Ii64(name), F4_Index_NoteKind_Type, note_flags);
             }
         }
-        
+
         //~ NOTE(rjf): Functions
         else if(scope_nest == 0 &&
                 (F4_Index_ParsePattern(ctx, "%k%o%k%t",
@@ -383,7 +383,7 @@ internal F4_LANGUAGE_INDEXFILE(F4_CPP_IndexFile)
                 F4_Index_MakeNote(ctx, Ii64(name), F4_Index_NoteKind_Function, prototype ? F4_Index_NoteFlag_Prototype : 0);
             }
         }
-        
+
         //~ NOTE(rjf): Member Functions
         else if(scope_nest == 0 &&
                 (F4_Index_ParsePattern(ctx, "%k%o%n%t%k%t",
@@ -406,14 +406,25 @@ internal F4_LANGUAGE_INDEXFILE(F4_CPP_IndexFile)
                 F4_Index_MakeNote(ctx, Ii64(name), F4_Index_NoteKind_Function, prototype ? F4_Index_NoteFlag_ProductType : 0);
             }
         }
-        
+
+//         // @note(maihd): label/switch cases
+//         else if (F4_Index_ParsePattern(ctx, TokenBaseKind_Identifier, ":"))
+//         {
+//             handled = 1;
+//             scope_nest -= 1;
+//             if(scope_nest < 0)
+//             {
+//                 scope_nest = 0;
+//             }
+//         }
+
         //~ NOTE(rjf): Declarations
         else if(scope_nest == 0 && F4_CPP_ParseDecl(ctx, &name))
         {
             handled = 1;
             F4_Index_MakeNote(ctx, Ii64(name), F4_Index_NoteKind_Decl, 0);
         }
-        
+
         //~ NOTE(rjf): Macro Functions
         else if(0 && F4_Index_ParsePattern(ctx, "%n%t%k",
                                            F4_Index_NoteKind_Macro, &note,
@@ -422,7 +433,7 @@ internal F4_LANGUAGE_INDEXFILE(F4_CPP_IndexFile)
         {
             b32 valid = 0;
             b32 prototype = 0;
-            
+
             for(;!ctx->done;)
             {
                 Token *token = token_it_read(&ctx->it);
@@ -443,7 +454,7 @@ internal F4_LANGUAGE_INDEXFILE(F4_CPP_IndexFile)
                 }
                 F4_Index_ParseCtx_Inc(ctx, 0);
             }
-            
+
             if(valid)
             {
                 handled = 1;
@@ -451,22 +462,22 @@ internal F4_LANGUAGE_INDEXFILE(F4_CPP_IndexFile)
                 F4_CPP_SkipParseBody(ctx);
             }
         }
-        
+
         //~ NOTE(rjf): Comment Tags
         else if(F4_Index_ParsePattern(ctx, "%k", TokenBaseKind_Comment, &name))
         {
             handled = 1;
             F4_Index_ParseComment(ctx, name);
         }
-        
+
         //~ NOTE(rjf): Macros
         else if(F4_Index_ParsePattern(ctx, "%b", TokenCppKind_PPDefine, &name))
         {
             handled = 1;
             F4_CPP_ParseMacroDefinition(ctx);
         }
-        
-        
+
+
         if(handled == 0)
         {
             F4_Index_ParseCtx_Inc(ctx, 0);
@@ -479,10 +490,10 @@ internal F4_LANGUAGE_POSCONTEXT(F4_CPP_PosContext)
     int count = 0;
     F4_Language_PosContextData *first = 0;
     F4_Language_PosContextData *last = 0;
-    
+
     Token_Array tokens = get_token_array_from_buffer(app, buffer);
     Token_Iterator_Array it = token_iterator_pos(0, &tokens, pos);
-    
+
     // NOTE(rjf): Search for left parentheses (function call or macro invocation).
     {
         int paren_nest = 0;
@@ -524,7 +535,7 @@ internal F4_LANGUAGE_POSCONTEXT(F4_CPP_PosContext)
             }
         }
     }
-    
+
     // NOTE(rjf): Search for *.* pattern, or *->* pattern (accessing a type)
     {
 #if 0
@@ -545,7 +556,7 @@ internal F4_LANGUAGE_POSCONTEXT(F4_CPP_PosContext)
                     Token *decl_name = token_it_read(&it);
                     if(decl_name && decl_name->kind == TokenBaseKind_Identifier)
                     {
-                        
+
                     }
                 }
             }
@@ -557,7 +568,7 @@ internal F4_LANGUAGE_POSCONTEXT(F4_CPP_PosContext)
         }
 #endif
     }
-    
+
     return first;
 }
 
